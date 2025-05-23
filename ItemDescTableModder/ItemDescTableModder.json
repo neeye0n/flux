@@ -1,0 +1,32 @@
+{
+  "itemIdDescTextColor": "007ACC",
+  "itemIdDescValueColor": "FFB300",
+  "brewingConfig": {
+    "enableTags": 1,
+    "enableDescriptions": 1,
+    "tagText": "Brew",
+    "descriptionHeaderColor": "00897B",
+    "descriptionRowsColor": "43A047"
+  },
+  "cookingConfig": {
+    "enableTags": 1,
+    "enableDescriptions": 1,
+    "tagText": "Cook",
+    "descriptionHeaderColor": "EF6C00",
+    "descriptionRowsColor": "6D4C41"
+  },
+  "questConfig": {
+    "enableTags": 1,
+    "enableDescriptions": 1,
+    "tagText": "Quest",
+    "descriptionHeaderColor": "5E35B1",
+    "descriptionRowsColor": "8E24AA"
+  },
+  "instanceConfig": {
+    "enableTags": 1,
+    "enableDescriptions": 1,
+    "tagText": "Instance",
+    "descriptionHeaderColor": "C62828",
+    "descriptionRowsColor": "D84315"
+  }
+}
