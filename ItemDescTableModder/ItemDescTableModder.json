@@ -3,7 +3,7 @@
   "itemIdDescValueColor": "FFB300",
   "brewingConfig": {
     "enableTags": 1,
-    "enableDescriptions": 1,
+    "enableDescriptions": 0,
     "tagText": "Brew",
     "descriptionHeaderColor": "00897B",
     "descriptionRowsColor": "43A047"
