@@ -558,5 +558,49 @@
       "matId": 1001253,
       "qty": 5
     }
+  ],
+  "Skin of Typhoon": [
+    {
+      "matId": 7123,
+      "qty": 50
+    },
+    {
+      "matId": 967,
+      "qty": 50
+    },
+    {
+      "matId": 720,
+      "qty": 50
+    },
+    {
+      "matId": 2504,
+      "qty": 1
+    },
+    {
+      "matId": 4952,
+      "qty": 5
+    }
+  ],
+  "Boots of Typhoon": [
+    {
+      "matId": 7123,
+      "qty": 50
+    },
+    {
+      "matId": 967,
+      "qty": 50
+    },
+    {
+      "matId": 720,
+      "qty": 50
+    },
+    {
+      "matId": 2406,
+      "qty": 1
+    },
+    {
+      "matId": 4952,
+      "qty": 5
+    }
   ]
 }
