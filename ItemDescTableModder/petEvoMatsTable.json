@@ -1,7 +1,7 @@
 {
   "Mastering": [
     {
-      "matId": 607,
+      "matId": 610,
       "matName": "Yggdrasil Leaf",
       "qty": 10
     },
@@ -608,7 +608,7 @@
       "qty": 1
     },
     {
-      "matId": 6100,
+      "matId": 0,
       "matName": "Damp Darkness",
       "qty": 50
     },
