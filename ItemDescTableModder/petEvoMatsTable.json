@@ -51,12 +51,12 @@
     },
     {
       "matId": 7101,
-      "matName": "Peco Peco Feather",
+      "matName": "PecoPeco Feather",
       "qty": 300
     },
     {
       "matId": 4031,
-      "matName": "Peco Peco Card",
+      "matName": "PecoPeco Card",
       "qty": 1
     }
   ],
@@ -132,7 +132,7 @@
     },
     {
       "matId": 981,
-      "matName": "Violet Dyestuff",
+      "matName": "Violet Dyestuffs",
       "qty": 3
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "matId": 732,
-      "matName": "3 Carat Diamond",
+      "matName": "3Carat Diamond",
       "qty": 6
     }
   ],
@@ -401,7 +401,7 @@
   "Aliza": [
     {
       "matId": 7047,
-      "matName": "Alice Apron",
+      "matName": "Alice's Apron",
       "qty": 500
     },
     {
@@ -450,7 +450,7 @@
   "Desert Wolf": [
     {
       "matId": 628,
-      "matName": "Well Dried Bone",
+      "matName": "Well-Dried Bone",
       "qty": 3
     },
     {
@@ -543,7 +543,7 @@
     },
     {
       "matId": 7019,
-      "matName": "Loki's Whisper",
+      "matName": "Loki's Whispers",
       "qty": 2
     },
     {
@@ -587,7 +587,7 @@
     },
     {
       "matId": 7510,
-      "matName": "Valhalla Flower",
+      "matName": "Valhalla's Flower",
       "qty": 10
     },
     {
@@ -653,7 +653,7 @@
     },
     {
       "matId": 2626,
-      "matName": "Rosary[1]",
+      "matName": "Rosary [1]",
       "qty": 1
     },
     {
