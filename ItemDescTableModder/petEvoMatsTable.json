@@ -50,7 +50,7 @@
       "qty": 3
     },
     {
-      "matId": 1018,
+      "matId": 7101,
       "matName": "Peco Peco Feather",
       "qty": 300
     },
@@ -77,7 +77,7 @@
       "qty": 500
     },
     {
-      "matId": 5094,
+      "matId": 5687,
       "matName": "Orc Helm",
       "qty": 1
     },
@@ -104,7 +104,7 @@
       "qty": 2
     },
     {
-      "matId": 4065,
+      "matId": 4375,
       "matName": "Orc Baby Card",
       "qty": 2
     },
@@ -126,12 +126,12 @@
   ],
   "Am Mut": [
     {
-      "matId": 1056,
+      "matId": 637,
       "matName": "Old Broom",
       "qty": 3
     },
     {
-      "matId": 975,
+      "matId": 981,
       "matName": "Violet Dyestuff",
       "qty": 3
     },
@@ -148,23 +148,23 @@
   ],
   "Little Isis": [
     {
-      "matId": 6027,
+      "matId": 639,
       "matName": "Armlet of Obedience",
       "qty": 3
     },
     {
-      "matId": 5080,
+      "matId": 10006,
       "matName": "Queen's Hair Ornament",
       "qty": 1
     },
     {
       "matId": 954,
-      "matName": "Shining Scales",
+      "matName": "Shining Scale",
       "qty": 300
     },
     {
-      "matId": 730,
-      "matName": "3carat Diamond",
+      "matId": 732,
+      "matName": "3 Carat Diamond",
       "qty": 6
     }
   ],
@@ -175,12 +175,12 @@
       "qty": 3
     },
     {
-      "matId": 1002,
+      "matId": 753,
       "matName": "Yoyo Doll",
       "qty": 2
     },
     {
-      "matId": 518,
+      "matId": 7182,
       "matName": "Cacao",
       "qty": 300
     },
@@ -197,7 +197,7 @@
       "qty": 10
     },
     {
-      "matId": 645,
+      "matId": 627,
       "matName": "Sweet Milk",
       "qty": 3
     },
@@ -214,7 +214,7 @@
   ],
   "Yao Jun": [
     {
-      "matId": 5090,
+      "matId": 2264,
       "matName": "Munak Hat",
       "qty": 1
     },
@@ -224,7 +224,7 @@
       "qty": 1
     },
     {
-      "matId": 1498,
+      "matId": 7277,
       "matName": "Munak Doll",
       "qty": 100
     },
@@ -246,7 +246,7 @@
       "qty": 3
     },
     {
-      "matId": 1003,
+      "matId": 1038,
       "matName": "Little Evil Horn",
       "qty": 250
     },
@@ -268,7 +268,7 @@
       "qty": 3
     },
     {
-      "matId": 1026,
+      "matId": 1037,
       "matName": "Dragon Tail",
       "qty": 100
     },
@@ -352,7 +352,7 @@
   "Ancient Mummy": [
     {
       "matId": 930,
-      "matName": "Miracle Bandage",
+      "matName": "Rotten Bandage",
       "qty": 1
     },
     {
@@ -378,7 +378,7 @@
       "qty": 3
     },
     {
-      "matId": 4119,
+      "matId": 4088,
       "matName": "Frilldora Card",
       "qty": 3
     },
@@ -432,7 +432,7 @@
       "qty": 100
     },
     {
-      "matId": 7435,
+      "matId": 7449,
       "matName": "Bloody Page",
       "qty": 50
     },
@@ -449,7 +449,7 @@
   ],
   "Desert Wolf": [
     {
-      "matId": 6010,
+      "matId": 628,
       "matName": "Well Dried Bone",
       "qty": 3
     },
@@ -481,7 +481,7 @@
       "qty": 300
     },
     {
-      "matId": 714,
+      "matId": 7054,
       "matName": "Brigan",
       "qty": 300
     },
@@ -542,7 +542,7 @@
       "qty": 50
     },
     {
-      "matId": 7510,
+      "matId": 7019,
       "matName": "Loki's Whisper",
       "qty": 2
     },
@@ -608,12 +608,12 @@
       "qty": 1
     },
     {
-      "matId": 0,
+      "matId": 6100,
       "matName": "Damp Darkness",
       "qty": 50
     },
     {
-      "matId": 7566,
+      "matId": 7340,
       "matName": "Will of Darkness",
       "qty": 200
     },
@@ -635,7 +635,7 @@
       "qty": 3
     },
     {
-      "matId": 4415,
+      "matId": 4410,
       "matName": "Echio Card",
       "qty": 3
     },
@@ -652,7 +652,7 @@
       "qty": 500
     },
     {
-      "matId": 2608,
+      "matId": 2626,
       "matName": "Rosary[1]",
       "qty": 1
     },
@@ -701,17 +701,17 @@
       "qty": 50
     },
     {
-      "matId": 7453,
-      "matName": "Honey Jar",
+      "matId": 7121,
+      "matName": "Honey Pot",
       "qty": 200
     },
     {
-      "matId": 928,
-      "matName": "Sharp Feeler",
+      "matId": 7163,
+      "matName": "Hard Feeler",
       "qty": 300
     },
     {
-      "matId": 4015,
+      "matId": 4019,
       "matName": "Hornet Card",
       "qty": 3
     }
@@ -801,17 +801,17 @@
   ],
   "Cat O Nine Tail": [
     {
-      "matId": 6033,
+      "matId": 23187,
       "matName": "Sap Jelly",
       "qty": 3
     },
     {
       "matId": 1022,
-      "matName": "Fox Tail",
+      "matName": "Nine Tails",
       "qty": 999
     },
     {
-      "matId": 1129,
+      "matId": 10008,
       "matName": "Punisher",
       "qty": 1
     },
