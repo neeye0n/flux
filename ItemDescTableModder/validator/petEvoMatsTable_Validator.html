@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item ID Validator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .controls {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      .progress {
+        margin: 10px 0;
+        font-weight: bold;
+      }
+      .results {
+        margin-top: 20px;
+      }
+      .monster {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        background: #fafafa;
+      }
+      .monster-header {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 4px 4px 0 0;
+      }
+      .monster-content {
+        padding: 10px;
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 4px;
+        border-left: 4px solid #ddd;
+      }
+      .item.match {
+        background-color: #d4edda;
+        border-left-color: #28a745;
+      }
+      .item.mismatch {
+        background-color: #f8d7da;
+        border-left-color: #dc3545;
+      }
+      .item.checking {
+        background-color: #fff3cd;
+        border-left-color: #ffc107;
+      }
+      .item.error {
+        background-color: #f8d7da;
+        border-left-color: #dc3545;
+      }
+      .item-info {
+        flex: 1;
+      }
+      .item-id {
+        font-family: monospace;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .item-name {
+        margin-right: 10px;
+      }
+      .status {
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-weight: bold;
+      }
+      .status.match {
+        background-color: #28a745;
+        color: white;
+      }
+      .status.mismatch {
+        background-color: #dc3545;
+        color: white;
+      }
+      .status.checking {
+        background-color: #ffc107;
+        color: black;
+      }
+      .status.error {
+        background-color: #6c757d;
+        color: white;
+      }
+      .actual-name {
+        font-style: italic;
+        color: #666;
+        font-size: 12px;
+      }
+      .summary {
+        background: #e9ecef;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      .summary h3 {
+        margin-top: 0;
+      }
+      .delay-info {
+        background: #d1ecf1;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        border-left: 4px solid #bee5eb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Item ID Validator</h1>
+      <p>
+        This tool validates item IDs and names from your JSON file against the
+        divine-pride.net database.
+      </p>
+
+      <div class="delay-info">
+        <strong>Note:</strong> To avoid overwhelming the server, there's a
+        1-second delay between each request.
+      </div>
+
+      <div class="controls">
+        <button id="validateBtn">Start Validation</button>
+        <button id="stopBtn" disabled>Stop Validation</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div class="progress" id="progress"></div>
+
+      <div class="summary" id="summary" style="display: none">
+        <h3>Summary</h3>
+        <div id="summaryContent"></div>
+      </div>
+
+      <div class="results" id="results"></div>
+    </div>
+
+    <script>
+      const jsonData = {
+        Mastering: [
+          {
+            matId: 610,
+            matName: "Yggdrasil Leaf",
+            qty: 10,
+          },
+          {
+            matId: 619,
+            matName: "Unripe Apple",
+            qty: 3,
+          },
+        ],
+        Angeling: [
+          {
+            matId: 503,
+            matName: "Yellow Potion",
+            qty: 20,
+          },
+          {
+            matId: 509,
+            matName: "White Herb",
+            qty: 50,
+          },
+          {
+            matId: 909,
+            matName: "Jellopy",
+            qty: 200,
+          },
+          {
+            matId: 2282,
+            matName: "Halo",
+            qty: 1,
+          },
+          {
+            matId: 4001,
+            matName: "Poring Card",
+            qty: 3,
+          },
+        ],
+        "Grand Peco": [
+          {
+            matId: 537,
+            matName: "Pet Food",
+            qty: 10,
+          },
+          {
+            matId: 632,
+            matName: "Fatty Chubby EarthWorm",
+            qty: 3,
+          },
+          {
+            matId: 7101,
+            matName: "PecoPeco Feather",
+            qty: 300,
+          },
+          {
+            matId: 4031,
+            matName: "PecoPeco Card",
+            qty: 1,
+          },
+        ],
+        "High Orc": [
+          {
+            matId: 635,
+            matName: "Orc Trophy",
+            qty: 3,
+          },
+          {
+            matId: 1124,
+            matName: "Orcish Sword",
+            qty: 1,
+          },
+          {
+            matId: 931,
+            matName: "Orcish Voucher",
+            qty: 500,
+          },
+          {
+            matId: 2299,
+            matName: "Orc Helm",
+            qty: 1,
+          },
+          {
+            matId: 4066,
+            matName: "Orc Warrior Card",
+            qty: 1,
+          },
+          {
+            matId: 4255,
+            matName: "Orc Lady Card",
+            qty: 1,
+          },
+          {
+            matId: 4322,
+            matName: "High Orc Card",
+            qty: 1,
+          },
+        ],
+        "Orc Hero": [
+          {
+            matId: 4066,
+            matName: "Orc Warrior Card",
+            qty: 2,
+          },
+          {
+            matId: 4375,
+            matName: "Orc Baby Card",
+            qty: 2,
+          },
+          {
+            matId: 4322,
+            matName: "High Orc Card",
+            qty: 2,
+          },
+          {
+            matId: 5094,
+            matName: "Helmet of Orc Hero",
+            qty: 1,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Am Mut": [
+          {
+            matId: 637,
+            matName: "Old Broom",
+            qty: 3,
+          },
+          {
+            matId: 981,
+            matName: "Violet Dyestuffs",
+            qty: 3,
+          },
+          {
+            matId: 1021,
+            matName: "Dokebi Horn",
+            qty: 300,
+          },
+          {
+            matId: 969,
+            matName: "Gold",
+            qty: 3,
+          },
+        ],
+        "Little Isis": [
+          {
+            matId: 639,
+            matName: "Armlet of Obedience",
+            qty: 3,
+          },
+          {
+            matId: 10006,
+            matName: "Queen's Hair Ornament",
+            qty: 1,
+          },
+          {
+            matId: 954,
+            matName: "Shining Scale",
+            qty: 300,
+          },
+          {
+            matId: 732,
+            matName: "3Carat Diamond",
+            qty: 6,
+          },
+        ],
+        Choco: [
+          {
+            matId: 634,
+            matName: "Tropical Banana",
+            qty: 3,
+          },
+          {
+            matId: 753,
+            matName: "Yoyo Doll",
+            qty: 2,
+          },
+          {
+            matId: 7182,
+            matName: "Cacao",
+            qty: 300,
+          },
+          {
+            matId: 4051,
+            matName: "Yoyo Card",
+            qty: 1,
+          },
+        ],
+        Savage: [
+          {
+            matId: 537,
+            matName: "Pet Food",
+            qty: 10,
+          },
+          {
+            matId: 627,
+            matName: "Sweet Milk",
+            qty: 3,
+          },
+          {
+            matId: 517,
+            matName: "Meat",
+            qty: 100,
+          },
+          {
+            matId: 949,
+            matName: "Feather",
+            qty: 50,
+          },
+        ],
+        "Yao Jun": [
+          {
+            matId: 2264,
+            matName: "Munak Hat",
+            qty: 1,
+          },
+          {
+            matId: 5046,
+            matName: "Bongun Hat",
+            qty: 1,
+          },
+          {
+            matId: 7277,
+            matName: "Munak Doll",
+            qty: 100,
+          },
+          {
+            matId: 7014,
+            matName: "Old Portrait",
+            qty: 50,
+          },
+          {
+            matId: 4328,
+            matName: "Hyegun Card",
+            qty: 1,
+          },
+        ],
+        Diabolic: [
+          {
+            matId: 641,
+            matName: "Contract in Shadow",
+            qty: 3,
+          },
+          {
+            matId: 1038,
+            matName: "Little Evil Horn",
+            qty: 250,
+          },
+          {
+            matId: 1009,
+            matName: "Hand of God",
+            qty: 10,
+          },
+          {
+            matId: 4122,
+            matName: "Deviruchi Card",
+            qty: 1,
+          },
+        ],
+        "Earth Deleter": [
+          {
+            matId: 640,
+            matName: "Shining Stone",
+            qty: 3,
+          },
+          {
+            matId: 1037,
+            matName: "Dragon Tail",
+            qty: 100,
+          },
+          {
+            matId: 606,
+            matName: "Aloevera",
+            qty: 100,
+          },
+          {
+            matId: 4118,
+            matName: "Earth Petite Card",
+            qty: 1,
+          },
+        ],
+        "Wild Rose": [
+          {
+            matId: 7198,
+            matName: "Huge Leaf",
+            qty: 500,
+          },
+          {
+            matId: 7206,
+            matName: "Black Cat Doll",
+            qty: 200,
+          },
+          {
+            matId: 1023,
+            matName: "Fish Tail",
+            qty: 200,
+          },
+          {
+            matId: 4195,
+            matName: "Leaf Cat Card",
+            qty: 3,
+          },
+        ],
+        Eddga: [
+          {
+            matId: 4195,
+            matName: "Leaf Cat Card",
+            qty: 4,
+          },
+          {
+            matId: 4257,
+            matName: "Wild Rose Card",
+            qty: 4,
+          },
+          {
+            matId: 4265,
+            matName: "Jing Guai Card",
+            qty: 4,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        Metaller: [
+          {
+            matId: 707,
+            matName: "Singing Plant",
+            qty: 3,
+          },
+          {
+            matId: 940,
+            matName: "Grasshopper's Leg",
+            qty: 777,
+          },
+          {
+            matId: 508,
+            matName: "Yellow Herb",
+            qty: 200,
+          },
+          {
+            matId: 4057,
+            matName: "Metaller Card",
+            qty: 1,
+          },
+        ],
+        "Ancient Mummy": [
+          {
+            matId: 930,
+            matName: "Rotten Bandage",
+            qty: 1,
+          },
+          {
+            matId: 7511,
+            matName: "Rune of Darkness",
+            qty: 200,
+          },
+          {
+            matId: 969,
+            matName: "Gold",
+            qty: 3,
+          },
+          {
+            matId: 4248,
+            matName: "Ancient Mummy Card",
+            qty: 1,
+          },
+        ],
+        Phreeoni: [
+          {
+            matId: 4081,
+            matName: "Hode Card",
+            qty: 3,
+          },
+          {
+            matId: 4088,
+            matName: "Frilldora Card",
+            qty: 3,
+          },
+          {
+            matId: 4004,
+            matName: "Drops Card",
+            qty: 3,
+          },
+          {
+            matId: 7021,
+            matName: "Foolishness Of The Blind",
+            qty: 3,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        Aliza: [
+          {
+            matId: 7047,
+            matName: "Alice's Apron",
+            qty: 500,
+          },
+          {
+            matId: 511,
+            matName: "Green Herb",
+            qty: 200,
+          },
+          {
+            matId: 985,
+            matName: "Elunium",
+            qty: 30,
+          },
+          {
+            matId: 4253,
+            matName: "Alice Card",
+            qty: 1,
+          },
+        ],
+        Alicel: [
+          {
+            matId: 7317,
+            matName: "Rusty Screw",
+            qty: 500,
+          },
+          {
+            matId: 518,
+            matName: "Honey",
+            qty: 100,
+          },
+          {
+            matId: 7449,
+            matName: "Bloody Page",
+            qty: 50,
+          },
+          {
+            matId: 4400,
+            matName: "Aliza Card",
+            qty: 3,
+          },
+          {
+            matId: 4253,
+            matName: "Alice Card",
+            qty: 1,
+          },
+        ],
+        "Desert Wolf": [
+          {
+            matId: 628,
+            matName: "Well-Dried Bone",
+            qty: 3,
+          },
+          {
+            matId: 4082,
+            matName: "Desert Wolf Card",
+            qty: 1,
+          },
+          {
+            matId: 7030,
+            matName: "Claw of Desert Wolf",
+            qty: 300,
+          },
+          {
+            matId: 919,
+            matName: "Animal Skin",
+            qty: 20,
+          },
+        ],
+        "Chaotic Baphomet Jr.": [
+          {
+            matId: 4129,
+            matName: "Bapho Jr. Card",
+            qty: 1,
+          },
+          {
+            matId: 923,
+            matName: "Evil Horn",
+            qty: 300,
+          },
+          {
+            matId: 7054,
+            matName: "Brigan",
+            qty: 300,
+          },
+          {
+            matId: 508,
+            matName: "Yellow Herb",
+            qty: 100,
+          },
+        ],
+        Baphomet: [
+          {
+            matId: 4129,
+            matName: "Bapho Jr. Card",
+            qty: 2,
+          },
+          {
+            matId: 2256,
+            matName: "Majestic Goat",
+            qty: 1,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Fire Golem": [
+          {
+            matId: 953,
+            matName: "Stone Heart",
+            qty: 500,
+          },
+          {
+            matId: 12371,
+            matName: "Magical Lithography",
+            qty: 1,
+          },
+          {
+            matId: 4072,
+            matName: "Golem Card",
+            qty: 2,
+          },
+          {
+            matId: 990,
+            matName: "Red Blood",
+            qty: 20,
+          },
+        ],
+        "Blue Moon Loli Ruri": [
+          {
+            matId: 7214,
+            matName: "Bat Cage",
+            qty: 500,
+          },
+          {
+            matId: 510,
+            matName: "Blue Herb",
+            qty: 50,
+          },
+          {
+            matId: 7019,
+            matName: "Loki's Whispers",
+            qty: 2,
+          },
+          {
+            matId: 4191,
+            matName: "Loli Ruri Card",
+            qty: 2,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Abysmal Knight": [
+          {
+            matId: 1064,
+            matName: "Reins",
+            qty: 1000,
+          },
+          {
+            matId: 7511,
+            matName: "Rune of Darkness",
+            qty: 1000,
+          },
+          {
+            matId: 4140,
+            matName: "Abysmal Knight Card",
+            qty: 2,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "White Knight": [
+          {
+            matId: 7063,
+            matName: "Soft Feather",
+            qty: 1000,
+          },
+          {
+            matId: 7510,
+            matName: "Valhalla's Flower",
+            qty: 10,
+          },
+          {
+            matId: 4140,
+            matName: "Abysmal Knight Card",
+            qty: 2,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        Hodremlin: [
+          {
+            matId: 23188,
+            matName: "Broken Part",
+            qty: 1,
+          },
+          {
+            matId: 6100,
+            matName: "Damp Darkness",
+            qty: 50,
+          },
+          {
+            matId: 7340,
+            matName: "Will of Darkness",
+            qty: 200,
+          },
+          {
+            matId: 4413,
+            matName: "Hodremlin Card",
+            qty: 1,
+          },
+        ],
+        "Gloom Under Night": [
+          {
+            matId: 4413,
+            matName: "Hodremlin Card",
+            qty: 3,
+          },
+          {
+            matId: 4414,
+            matName: "Seeker Card",
+            qty: 3,
+          },
+          {
+            matId: 4410,
+            matName: "Echio Card",
+            qty: 3,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Dark Illusion": [
+          {
+            matId: 7005,
+            matName: "Skull",
+            qty: 500,
+          },
+          {
+            matId: 2626,
+            matName: "Rosary [1]",
+            qty: 1,
+          },
+          {
+            matId: 1009,
+            matName: "Hand of God",
+            qty: 20,
+          },
+          {
+            matId: 4171,
+            matName: "Dark Priest Card",
+            qty: 3,
+          },
+        ],
+        "Dark Lord": [
+          {
+            matId: 4171,
+            matName: "Dark Priest Card",
+            qty: 3,
+          },
+          {
+            matId: 4141,
+            matName: "Evil Druid Card",
+            qty: 3,
+          },
+          {
+            matId: 27384,
+            matName: "Mutated White Knight Card",
+            qty: 3,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Giant Hornet": [
+          {
+            matId: 518,
+            matName: "Honey",
+            qty: 80,
+          },
+          {
+            matId: 526,
+            matName: "Royal Jelly",
+            qty: 50,
+          },
+          {
+            matId: 7121,
+            matName: "Honey Pot",
+            qty: 200,
+          },
+          {
+            matId: 7163,
+            matName: "Hard Feeler",
+            qty: 300,
+          },
+          {
+            matId: 4019,
+            matName: "Hornet Card",
+            qty: 3,
+          },
+        ],
+        Mistress: [
+          {
+            matId: 4019,
+            matName: "Hornet card",
+            qty: 3,
+          },
+          {
+            matId: 4079,
+            matName: "Mantis Card",
+            qty: 3,
+          },
+          {
+            matId: 4117,
+            matName: "Sidewinder card",
+            qty: 3,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Abandoned Teddy Bear": [
+          {
+            matId: 23189,
+            matName: "Small Doll Needle",
+            qty: 1,
+          },
+          {
+            matId: 7442,
+            matName: "Cursed Seal",
+            qty: 150,
+          },
+          {
+            matId: 724,
+            matName: "Cursed Ruby",
+            qty: 50,
+          },
+          {
+            matId: 4340,
+            matName: "Teddy Bear Card",
+            qty: 1,
+          },
+        ],
+        Aliot: [
+          {
+            matId: 7317,
+            matName: "Rusty Screw",
+            qty: 500,
+          },
+          {
+            matId: 518,
+            matName: "Honey",
+            qty: 100,
+          },
+          {
+            matId: 727,
+            matName: "Opal",
+            qty: 10,
+          },
+          {
+            matId: 4340,
+            matName: "Teddy Bear Card",
+            qty: 1,
+          },
+        ],
+        "Kiel D-01": [
+          {
+            matId: 4401,
+            matName: "Alicel Card",
+            qty: 2,
+          },
+          {
+            matId: 4402,
+            matName: "Aliot Card",
+            qty: 2,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+        "Cat O Nine Tail": [
+          {
+            matId: 23187,
+            matName: "Sap Jelly",
+            qty: 3,
+          },
+          {
+            matId: 1022,
+            matName: "Nine Tails",
+            qty: 999,
+          },
+          {
+            matId: 10008,
+            matName: "Punisher",
+            qty: 1,
+          },
+          {
+            matId: 4159,
+            matName: "Nine Tail Card",
+            qty: 1,
+          },
+        ],
+        "Moonlight Flower": [
+          {
+            matId: 4159,
+            matName: "Nine Tail Card",
+            qty: 3,
+          },
+          {
+            matId: 4100,
+            matName: "Sohee Card",
+            qty: 3,
+          },
+          {
+            matId: 4090,
+            matName: "Munak Card",
+            qty: 3,
+          },
+          {
+            matId: 7642,
+            matName: "Bloody Coin",
+            qty: 50,
+          },
+        ],
+      };
+
+      let isValidating = false;
+      let currentIndex = 0;
+      let allItems = [];
+      let results = [];
+
+      // Flatten all items with their monster names
+      function flattenItems() {
+        allItems = [];
+        for (const [monsterName, items] of Object.entries(jsonData)) {
+          items.forEach((item) => {
+            allItems.push({
+              monster: monsterName,
+              ...item,
+            });
+          });
+        }
+      }
+
+      async function fetchItemName(itemId) {
+        try {
+          const response = await fetch(
+            `https://www.divine-pride.net/database/item/${itemId}`
+          );
+          const html = await response.text();
+
+          // Parse the HTML to find the og:title meta tag
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+          const metaTag = doc.querySelector('meta[property="og:title"]');
+
+          if (metaTag) {
+            const content = metaTag.getAttribute("content");
+            // Extract the item name after "Item: "
+            const match = content.match(/Item: (.+)/);
+            if (match) {
+              return match[1].trim();
+            }
+          }
+
+          return null;
+        } catch (error) {
+          console.error(`Error fetching item ${itemId}:`, error);
+          return null;
+        }
+      }
+
+      async function validateItems() {
+        isValidating = true;
+        document.getElementById("validateBtn").disabled = true;
+        document.getElementById("stopBtn").disabled = false;
+
+        results = [];
+
+        for (let i = currentIndex; i < allItems.length && isValidating; i++) {
+          const item = allItems[i];
+          currentIndex = i;
+
+          // Update progress
+          document.getElementById("progress").textContent = `Validating item ${
+            i + 1
+          } of ${allItems.length}: ${item.matName} (ID: ${item.matId})`;
+
+          // Update UI to show checking status
+          updateItemDisplay(item, "checking", null);
+
+          // Fetch the actual item name
+          const actualName = await fetchItemName(item.matId);
+
+          let status;
+          if (actualName === null) {
+            status = "error";
+          } else if (actualName.toLowerCase() === item.matName.toLowerCase()) {
+            status = "match";
+          } else {
+            status = "mismatch";
+          }
+
+          const result = {
+            ...item,
+            actualName,
+            status,
+          };
+
+          results.push(result);
+          updateItemDisplay(result, status, actualName);
+
+          // Wait 1 second before next request to be respectful to the server
+          if (i < allItems.length - 1 && isValidating) {
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+          }
+        }
+
+        if (isValidating) {
+          // Validation completed
+          document.getElementById("progress").textContent =
+            "Validation completed!";
+          showSummary();
+          currentIndex = 0;
+        }
+
+        isValidating = false;
+        document.getElementById("validateBtn").disabled = false;
+        document.getElementById("stopBtn").disabled = true;
+      }
+
+      function updateItemDisplay(item, status, actualName) {
+        const itemElement = document.getElementById(
+          `item-${item.matId}-${item.monster}`
+        );
+        if (itemElement) {
+          itemElement.className = `item ${status}`;
+          const statusElement = itemElement.querySelector(".status");
+          statusElement.className = `status ${status}`;
+
+          switch (status) {
+            case "checking":
+              statusElement.textContent = "CHECKING...";
+              break;
+            case "match":
+              statusElement.textContent = "MATCH";
+              break;
+            case "mismatch":
+              statusElement.textContent = "MISMATCH";
+              if (actualName) {
+                const actualNameElement =
+                  itemElement.querySelector(".actual-name");
+                actualNameElement.textContent = `Database: ${actualName}`;
+              }
+              break;
+            case "error":
+              statusElement.textContent = "ERROR";
+              break;
+          }
+        }
+      }
+
+      function showSummary() {
+        const matches = results.filter((r) => r.status === "match").length;
+        const mismatches = results.filter(
+          (r) => r.status === "mismatch"
+        ).length;
+        const errors = results.filter((r) => r.status === "error").length;
+
+        document.getElementById("summaryContent").innerHTML = `
+                <p><strong>Total Items:</strong> ${results.length}</p>
+                <p><strong>Matches:</strong> ${matches}</p>
+                <p><strong>Mismatches:</strong> ${mismatches}</p>
+                <p><strong>Errors:</strong> ${errors}</p>
+                <p><strong>Accuracy:</strong> ${(
+                  (matches / results.length) *
+                  100
+                ).toFixed(1)}%</p>
+            `;
+
+        document.getElementById("summary").style.display = "block";
+      }
+
+      function renderItems() {
+        const resultsContainer = document.getElementById("results");
+        resultsContainer.innerHTML = "";
+
+        const groupedByMonster = {};
+        allItems.forEach((item) => {
+          if (!groupedByMonster[item.monster]) {
+            groupedByMonster[item.monster] = [];
+          }
+          groupedByMonster[item.monster].push(item);
+        });
+
+        Object.entries(groupedByMonster).forEach(([monsterName, items]) => {
+          const monsterDiv = document.createElement("div");
+          monsterDiv.className = "monster";
+
+          const header = document.createElement("div");
+          header.className = "monster-header";
+          header.textContent = monsterName;
+
+          const content = document.createElement("div");
+          content.className = "monster-content";
+
+          items.forEach((item) => {
+            const itemDiv = document.createElement("div");
+            itemDiv.className = "item";
+            itemDiv.id = `item-${item.matId}-${item.monster}`;
+
+            itemDiv.innerHTML = `
+                        <div class="item-info">
+                            <span class="item-id">${item.matId}</span>
+                            <span class="item-name">${item.matName}</span>
+                            <span class="qty">(Qty: ${item.qty})</span>
+                            <div class="actual-name"></div>
+                        </div>
+                        <span class="status">PENDING</span>
+                    `;
+
+            content.appendChild(itemDiv);
+          });
+
+          monsterDiv.appendChild(header);
+          monsterDiv.appendChild(content);
+          resultsContainer.appendChild(monsterDiv);
+        });
+      }
+
+      function stopValidation() {
+        isValidating = false;
+        document.getElementById("progress").textContent = "Validation stopped.";
+        document.getElementById("validateBtn").disabled = false;
+        document.getElementById("stopBtn").disabled = true;
+      }
+
+      function resetValidation() {
+        isValidating = false;
+        currentIndex = 0;
+        results = [];
+        document.getElementById("progress").textContent = "";
+        document.getElementById("summary").style.display = "none";
+        document.getElementById("validateBtn").disabled = false;
+        document.getElementById("stopBtn").disabled = true;
+        renderItems();
+      }
+
+      // Event listeners
+      document
+        .getElementById("validateBtn")
+        .addEventListener("click", validateItems);
+      document
+        .getElementById("stopBtn")
+        .addEventListener("click", stopValidation);
+      document
+        .getElementById("resetBtn")
+        .addEventListener("click", resetValidation);
+
+      // Initialize
+      flattenItems();
+      renderItems();
+    </script>
+  </body>
+</html>
