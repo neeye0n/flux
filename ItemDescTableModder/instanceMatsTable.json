@@ -28,7 +28,7 @@
       "qty": 40
     }
   ],
-  "Baphomet": [
+  "Bapho": [
     {
       "matId": 1031,
       "matName": "Mantis Scythe",
@@ -45,7 +45,7 @@
       "qty": 45
     }
   ],
-  "Beelzebub": [
+  "Beelze": [
     {
       "matId": 7752,
       "matName": "Clattering Skull",
@@ -108,7 +108,7 @@
       "qty": 20
     }
   ],
-  "Doppelganger": [
+  "Doppel": [
     {
       "matId": 944,
       "matName": "Horseshoe",
@@ -166,7 +166,7 @@
       "qty": 50
     }
   ],
-  "Egnigem Cenia": [
+  "Bio2 MVP": [
     {
       "matId": 7345,
       "matName": "Handcuffs",
@@ -178,7 +178,7 @@
       "qty": 5
     }
   ],
-  "Evil Snake Lord": [
+  "ESL": [
     {
       "matId": 7162,
       "matName": "Evil Cloud Crumb",
@@ -190,7 +190,7 @@
       "qty": 30
     }
   ],
-  "Fallen Bishop": [
+  "FBH": [
     {
       "matId": 7752,
       "matName": "Clattering Skull",
@@ -219,7 +219,7 @@
       "qty": 5
     }
   ],
-  "Gloom Under Night": [
+  "Gloom": [
     {
       "matId": 7563,
       "matName": "Bloody Rune",
@@ -236,7 +236,7 @@
       "qty": 10
     }
   ],
-  "Golden Thief Bug": [
+  "GTB": [
     {
       "matId": 955,
       "matName": "Worm Peeling",
@@ -270,7 +270,7 @@
       "qty": 25
     }
   ],
-  "Kiel-D01": [
+  "Kiel": [
     {
       "matId": 7507,
       "matName": "Solid Iron Piece",
@@ -287,7 +287,7 @@
       "qty": 20
     }
   ],
-  "Ktullanux": [
+  "Ktull": [
     {
       "matId": 7561,
       "matName": "Glacial Heart",
@@ -299,7 +299,7 @@
       "qty": 40
     }
   ],
-  "Lady Tanee": [
+  "Tanee": [
     {
       "matId": 7301,
       "matName": "Tassel",
@@ -311,7 +311,7 @@
       "qty": 30
     }
   ],
-  "Lord of Death": [
+  "LoD": [
     {
       "matId": 7218,
       "matName": "Decomposed Rope",
@@ -328,7 +328,7 @@
       "qty": 30
     }
   ],
-  "Memory of Thanatos": [
+  "Thanatos": [
     {
       "matId": 7436,
       "matName": "Fragment of Agony",
@@ -374,7 +374,7 @@
       "qty": 50
     }
   ],
-  "Moonlight Flower": [
+  "Moonlight F.": [
     {
       "matId": 1022,
       "matName": "Nine Tails",
@@ -456,7 +456,7 @@
       "qty": 50
     }
   ],
-  "RSX-0806": [
+  "RSX": [
     {
       "matId": 7315,
       "matName": "Dark Crystal Fragment",
@@ -478,7 +478,7 @@
       "qty": 15
     }
   ],
-  "Samurai Specter": [
+  "Samurai S.": [
     {
       "matId": 7156,
       "matName": "Broken Shuriken",
@@ -490,7 +490,7 @@
       "qty": 30
     }
   ],
-  "Stormy Knight": [
+  "Stormy K.": [
     {
       "matId": 539,
       "matName": "Piece of Cake",
@@ -519,7 +519,7 @@
       "qty": 50
     }
   ],
-  "Turtle General": [
+  "Turtle Gen.": [
     {
       "matId": 967,
       "matName": "Turtle Shell",
@@ -536,7 +536,7 @@
       "qty": 15
     }
   ],
-  "Valkyrie Randgris": [
+  "Randgris": [
     {
       "matId": 7063,
       "matName": "Soft Feather",
@@ -575,7 +575,7 @@
       "qty": 1
     }
   ],
-  "White Lady": [
+  "Bacsojin": [
     {
       "matId": 7266,
       "matName": "Denture from Dragon Mask",
