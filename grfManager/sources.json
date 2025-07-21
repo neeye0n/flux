@@ -1,5 +1,11 @@
 [
-  {"filename": "bossMobs.grf", "url": "https://drive.google.com/file/d/1qoPkFSPb8dPEfs7VnHFKOT2KWqlYzHTP/view?usp=drive_link"},
+  {"filename": "bossMobs_labeled.grf", "url": "https://drive.google.com/file/d/1xAaNM6-WRdt7laAYoTjv-KFL63-jCPjZ/view?usp=drive_link"},
+  {"filename": "bossMobs_nolabel.grf", "url": "https://drive.google.com/file/d/1YjdoPX7sTjf4NopLIK-r_e_wOOwQhws-/view?usp=drive_link"},
   {"filename": "labeled_mobs.grf", "url": "https://drive.google.com/file/d/1sxZvr7CuMUPztDLAtj3C9N70VNaH8Gw8/view?usp=drive_link"},
-  {"filename": "nolabel_mobs.grf", "url": "https://drive.google.com/file/d/1PqYzCAqjlNruGEIO8OJ5gz1k2Eehcxum/view?usp=drive_link"}
+  {"filename": "nolabel_mobs.grf", "url": "https://drive.google.com/file/d/1PqYzCAqjlNruGEIO8OJ5gz1k2Eehcxum/view?usp=drive_link"},
+  {"filename": "derplgp.grf", "url": "https://drive.google.com/file/d/1Vkj62jg1RmLKwVgVPLUb8Soyu2cnnzbV/view?usp=drive_link"},
+  {"filename": "plugin.ini", "url": "https://drive.google.com/file/d/1DmQFq-GIVy5_m_mToCH2_e5zVGWp_r6N/view?usp=drive_link"},
+  {"filename": "HB_proxy.grf", "url": "https://drive.google.com/file/d/1gxAykPxcHVPmeF7tD6mufaUINXOMyUM3/view?usp=drive_link"},
+  {"filename": "ez_geffenia.grf", "url": "https://drive.google.com/file/d/1UgXb984lUZJsI1uObS5B22LEr5eqTv7h/view?usp=drive_link"},
+  {"filename": "no_hats.grf", "url": "https://drive.google.com/file/d/1-WS0F8BHhI_jJyDO1n011Rk_rJWFvYml/view?usp=drive_link"}
 ]
