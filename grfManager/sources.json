@@ -20,19 +20,24 @@
     "url": "https://drive.google.com/file/d/1PqYzCAqjlNruGEIO8OJ5gz1k2Eehcxum/view?usp=drive_link"
   },
   {
-    "name": "Custom LGP GRF (thanks to: @derpywastaken)",
+    "name": "Custom LGP GRF (thanks: @derpywastaken)",
     "filename": "derplgp.grf",
     "url": "https://drive.google.com/file/d/1Vkj62jg1RmLKwVgVPLUb8Soyu2cnnzbV/view?usp=drive_link"
   },
   {
-    "name": "Custom LGP Plugin (thanks to: @derpywastaken)",
+    "name": "Custom LGP Plugin (thanks: @derpywastaken)",
     "filename": "plugin.ini",
-    "url": "https://drive.google.com/file/d/1DmQFq-GIVy5_m_mToCH2_e5zVGWp_r6N/view?usp=drive_link"
+    "url": "https://drive.google.com/file/d/1Vkj62jg1RmLKwVgVPLUb8Soyu2cnnzbV/view?usp=drive_link"
   },
   {
     "name": "Hillibillies Proxy GRF",
     "filename": "HB_proxy.grf",
     "url": "https://drive.google.com/file/d/1gxAykPxcHVPmeF7tD6mufaUINXOMyUM3/view?usp=drive_link"
+  },
+  {
+    "name": "Hillibillies LGP Plugin",
+    "filename": "plugin.ini",
+    "url": "https://drive.google.com/file/d/18LQOf20DvdQTyWB-RCLe9a2k4vAWNyMp/view?usp=drive_link"
   },
   {
     "name": "EZ Geffenia",
@@ -43,5 +48,15 @@
     "name": "No Hats",
     "filename": "no_hats.grf",
     "url": "https://drive.google.com/file/d/1-WS0F8BHhI_jJyDO1n011Rk_rJWFvYml/view?usp=drive_link"
+  },
+  {
+    "name": "PVM effects_settings",
+    "filename": "effects_settings.txt",
+    "url": "https://drive.google.com/file/d/1gWbzHUgogIr4n_uBbZuQXplc4qsvxtCb/view?usp=drive_link"
+  },
+  {
+    "name": "PVP/WoE effects_settings",
+    "filename": "effects_settings.txt",
+    "url": "https://drive.google.com/file/d/1pRyRqKn-IpEjjC0xidTmxHijSng3B2X7/view?usp=drive_link"
   }
 ]
