@@ -3,30 +3,47 @@
   "itemIdDescValueColor": "FFB300",
   "brewingConfig": {
     "enableTags": 1,
-    "enableDescriptions": 0,
+    "enableDescriptions": 1,
+    "enableDetailedDescriptions": 0,
     "tagText": "Brew",
+    "headerText": "Brewing Material",
     "descriptionHeaderColor": "00897B",
     "descriptionRowsColor": "43A047"
   },
   "cookingConfig": {
     "enableTags": 1,
     "enableDescriptions": 1,
+    "enableDetailedDescriptions": 0,
     "tagText": "Cook",
+    "headerText": "Cooking Material",
     "descriptionHeaderColor": "EF6C00",
     "descriptionRowsColor": "6D4C41"
   },
   "questConfig": {
     "enableTags": 1,
     "enableDescriptions": 1,
+    "enableDetailedDescriptions": 1,
     "tagText": "Quest",
+    "headerText": "Quest Requirement",
     "descriptionHeaderColor": "5E35B1",
     "descriptionRowsColor": "8E24AA"
   },
   "instanceConfig": {
     "enableTags": 1,
     "enableDescriptions": 1,
+    "enableDetailedDescriptions": 1,
     "tagText": "Instance",
+    "headerText": "Instance Requirement",
     "descriptionHeaderColor": "C62828",
     "descriptionRowsColor": "D84315"
+  },
+  "petEvoConfig": {
+    "enableTags": 1,
+    "enableDescriptions": 1,
+    "enableDetailedDescriptions": 1,
+    "tagText": "Pet",
+    "headerText": "Pet Evo Material",
+    "descriptionHeaderColor": "5C6BC0",
+    "descriptionRowsColor": "7986CB"
   }
 }
