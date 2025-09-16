@@ -758,5 +758,49 @@
             "matId": 25266,
             "qty": 500
         }
+    ],
+    "Skin of Malach": [
+        {
+            "matId": 7799,
+            "qty": 50
+        },
+        {
+            "matId": 7798,
+            "qty": 50
+        },
+        {
+            "matId": 724,
+            "qty": 50
+        },
+        {
+            "matId": 2504,
+            "qty": 1
+        },
+        {
+            "matId": 25739,
+            "qty": 5
+        }
+    ],
+    "Boots of Malach": [
+        {
+            "matId": 7799,
+            "qty": 50
+        },
+        {
+            "matId": 7798,
+            "qty": 50
+        },
+        {
+            "matId": 724,
+            "qty": 50
+        },
+        {
+            "matId": 2406,
+            "qty": 1
+        },
+        {
+            "matId": 25739,
+            "qty": 5
+        }
     ]
 }
