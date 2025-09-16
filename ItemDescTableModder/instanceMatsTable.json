@@ -635,5 +635,22 @@
             "matName": "Short Bat Hair",
             "qty": 10
         }
+    ],
+    "Gopinich": [
+        {
+            "matId": 7762,
+            "matName": "Yaga's Pestle",
+            "qty": 40
+        },
+        {
+            "matId": 918,
+            "matName": "Sticky Webfoot",
+            "qty": 40
+        },
+        {
+            "matId": 510,
+            "matName": "Blue Herb",
+            "qty": 5
+        }
     ]
 }
