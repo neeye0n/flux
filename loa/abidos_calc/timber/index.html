@@ -17,22 +17,22 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Timber</label>
-          <input id="timber" type="number" value="11425"
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Normal Material (Gray)</label>
+          <input id="normal" type="number" value="11425"
             class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Tender Timber</label>
-          <input id="tenderTimber" type="number" value="2935"
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Uncommon Material (Green)</label>
+          <input id="uncommon" type="number" value="2935"
             class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Abidos Timber</label>
-          <input id="abidosTimber" type="number" value="755"
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Abidos Material</label>
+          <input id="abidosRare" type="number" value="755"
             class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Logging Powder</label>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Lifeskill Powder</label>
           <input id="powders" type="number" value="20"
             class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
@@ -45,15 +45,15 @@
       <h3 class="text-lg font-bold text-gray-800 mb-3">Crafting Requirements (per craft)</h3>
       <div class="grid grid-cols-3 gap-4 text-sm">
         <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Timber</p>
+          <p class="font-semibold text-gray-700">Normal Material (Gray)</p>
           <p class="text-2xl font-bold text-amber-700">86</p>
         </div>
         <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Tender Timber</p>
+          <p class="font-semibold text-gray-700">Uncommon Material (Green)</p>
           <p class="text-2xl font-bold text-amber-700">45</p>
         </div>
         <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Abidos Timber</p>
+          <p class="font-semibold text-gray-700">Abidos Material (Rare)</p>
           <p class="text-2xl font-bold text-amber-700">33</p>
         </div>
       </div>
@@ -61,42 +61,42 @@
   </div>
 
   <script>
-    const CRAFT_REQ = { timber: 86, tender: 45, abidos: 33 };
+    const CRAFT_REQ = { normal: 86, uncommon: 45, abidosRare: 33 };
     const EXCHANGE = {
-      timberToPowder: { cost: 100, powder: 80 },
-      tenderToPowder: { cost: 50, powder: 80 },
+      normalToPowder: { cost: 100, powder: 80 },
+      uncommonToPowder: { cost: 50, powder: 80 },
       powderToAbidos: { cost: 100, abidos: 10 }
     };
 
-    const inputs = ['timber', 'tenderTimber', 'abidosTimber', 'powders'];
+    const inputs = ['normal', 'uncommon', 'abidosRare', 'powders'];
     inputs.forEach(id => document.getElementById(id).addEventListener('input', calculateOptimal));
 
     function calculateOptimal() {
-      const timber = parseInt(document.getElementById('timber').value) || 0;
-      const tenderTimber = parseInt(document.getElementById('tenderTimber').value) || 0;
-      const abidosTimber = parseInt(document.getElementById('abidosTimber').value) || 0;
+      const normal = parseInt(document.getElementById('normal').value) || 0;
+      const uncommon = parseInt(document.getElementById('uncommon').value) || 0;
+      const abidosRare = parseInt(document.getElementById('abidosRare').value) || 0;
       const powders = parseInt(document.getElementById('powders').value) || 0;
 
       let maxCrafts = 0;
       let best = null;
 
-      const maxTimberBatches = Math.floor(timber / EXCHANGE.timberToPowder.cost);
-      const maxTenderBatches = Math.floor(tenderTimber / EXCHANGE.tenderToPowder.cost);
+      const maxNormalBatches = Math.floor(normal / EXCHANGE.normalToPowder.cost);
+      const maxUncommonBatches = Math.floor(uncommon / EXCHANGE.uncommonToPowder.cost);
 
-      for (let tb = 0; tb <= maxTimberBatches; tb++) {
-        for (let ttb = 0; ttb <= maxTenderBatches; ttb++) {
-          const remTimber = timber - (tb * EXCHANGE.timberToPowder.cost);
-          const remTender = tenderTimber - (ttb * EXCHANGE.tenderToPowder.cost);
-          const totalPowders = powders + (tb * EXCHANGE.timberToPowder.powder) + (ttb * EXCHANGE.tenderToPowder.powder);
+      for (let tb = 0; tb <= maxNormalBatches; tb++) {
+        for (let ttb = 0; ttb <= maxUncommonBatches; ttb++) {
+          const remNormal = normal - (tb * EXCHANGE.normalToPowder.cost);
+          const remUncommon = uncommon - (ttb * EXCHANGE.uncommonToPowder.cost);
+          const totalPowders = powders + (tb * EXCHANGE.normalToPowder.powder) + (ttb * EXCHANGE.uncommonToPowder.powder);
 
           const abidosBatches = Math.floor(totalPowders / EXCHANGE.powderToAbidos.cost);
           const remPowders = totalPowders - (abidosBatches * EXCHANGE.powderToAbidos.cost);
-          const totalAbidos = abidosTimber + (abidosBatches * EXCHANGE.powderToAbidos.abidos);
+          const totalAbidos = abidosRare + (abidosBatches * EXCHANGE.powderToAbidos.abidos);
 
           const crafts = Math.min(
-            Math.floor(remTimber / CRAFT_REQ.timber),
-            Math.floor(remTender / CRAFT_REQ.tender),
-            Math.floor(totalAbidos / CRAFT_REQ.abidos)
+            Math.floor(remNormal / CRAFT_REQ.normal),
+            Math.floor(remUncommon / CRAFT_REQ.uncommon),
+            Math.floor(totalAbidos / CRAFT_REQ.abidosRare)
           );
 
           if (crafts > maxCrafts) {
@@ -106,10 +106,10 @@
               powdersGenerated: tb * 80 + ttb * 80,
               abidosBatches,
               abidosGained: abidosBatches * 10,
-              remTimber, remTender, totalAbidos, remPowders, crafts,
-              usedTimber: crafts * 86, usedTender: crafts * 45, usedAbidos: crafts * 33,
-              leftoverTimber: remTimber - crafts * 86,
-              leftoverTender: remTender - crafts * 45,
+              remNormal, remUncommon, totalAbidos, remPowders, crafts,
+              usedNormal: crafts * 86, usedTender: crafts * 45, usedAbidos: crafts * 33,
+              leftoverNormal: remNormal - crafts * 86,
+              leftoverUncommon: remUncommon - crafts * 45,
               leftoverAbidos: totalAbidos - crafts * 33
             };
           }
@@ -139,31 +139,31 @@
             </div>
             ${best.tb > 0 ? `
               <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Timber:</p>
-                <p class="text-gray-700">${best.tb} batches (${best.tb * 100} Timber)</p>
-                <p class="text-sm text-gray-600">→ ${best.tb * 80} Logging Powder</p>
+                <p class="font-semibold text-gray-800">Convert Normal Material (Gray):</p>
+                <p class="text-gray-700">${best.tb} batches (${best.tb * 100} Normal Material (Gray))</p>
+                <p class="text-sm text-gray-600">→ ${best.tb * 80} Lifeskill Powder</p>
               </div>` : ''}
             ${best.ttb > 0 ? `
               <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Tender Timber:</p>
-                <p class="text-gray-700">${best.ttb} batches (${best.ttb * 50} Tender Timber)</p>
-                <p class="text-sm text-gray-600">→ ${best.ttb * 80} Logging Powder</p>
+                <p class="font-semibold text-gray-800">Convert Uncommon Material (Green):</p>
+                <p class="text-gray-700">${best.ttb} batches (${best.ttb * 50} Uncommon Material (Green))</p>
+                <p class="text-sm text-gray-600">→ ${best.ttb * 80} Lifeskill Powder</p>
               </div>` : ''}
             ${best.abidosBatches > 0 ? `
               <div class="p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Logging Powder:</p>
-                <p class="text-gray-700">${best.abidosBatches} batches (${best.abidosBatches * 100} Logging Powder)</p>
-                <p class="text-sm text-gray-600">→ ${best.abidosGained} Abidos Timber</p>
+                <p class="font-semibold text-gray-800">Convert Lifeskill Powder:</p>
+                <p class="text-gray-700">${best.abidosBatches} batches (${best.abidosBatches * 100} Lifeskill Powder)</p>
+                <p class="text-sm text-gray-600">→ ${best.abidosGained} Abidos Material (Rare)</p>
               </div>` : ''}
           </div>
 
           <div class="bg-green-50 rounded-xl p-6 border-2 border-green-200">
             <h3 class="text-xl font-bold text-gray-800 mb-4">Final Resources</h3>
             <div class="space-y-2">
-              <div class="flex justify-between p-2 bg-white rounded"><span>Timber:</span><span>${best.remTimber}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Tender Timber:</span><span>${best.remTender}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Abidos Timber:</span><span>${best.totalAbidos}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Logging Powder:</span><span>${best.remPowders}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span>Normal Material (Gray):</span><span>${best.remNormal}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span>Uncommon Material (Green):</span><span>${best.remUncommon}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span>Abidos Material (Rare):</span><span>${best.totalAbidos}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span>Lifeskill Powder:</span><span>${best.remPowders}</span></div>
             </div>
           </div>
         </div>`;
