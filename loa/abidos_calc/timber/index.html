@@ -139,31 +139,31 @@
             </div>
             ${best.tb > 0 ? `
               <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Normal Material (Gray):</p>
-                <p class="text-gray-700">${best.tb} batches (${best.tb * 100} Normal Material (Gray))</p>
-                <p class="text-sm text-gray-600">→ ${best.tb * 80} Lifeskill Powder</p>
+                <p class="font-semibold text-gray-800">Convert Normal Material:</p>
+                <p class="text-sm text-gray-700">${best.tb} batches (${best.tb * 100} Normal Material)</p>
+                <p class="text-xs text-gray-600">→ ${best.tb * 80} Lifeskill Powder</p>
               </div>` : ''}
             ${best.ttb > 0 ? `
               <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Uncommon Material (Green):</p>
-                <p class="text-gray-700">${best.ttb} batches (${best.ttb * 50} Uncommon Material (Green))</p>
-                <p class="text-sm text-gray-600">→ ${best.ttb * 80} Lifeskill Powder</p>
+                <p class="font-semibold text-gray-800">Convert Uncommon Material:</p>
+                <p class="text-sm text-gray-700">${best.ttb} batches (${best.ttb * 50} Uncommon Material)</p>
+                <p class="text-xs text-gray-600">→ ${best.ttb * 80} Lifeskill Powder</p>
               </div>` : ''}
             ${best.abidosBatches > 0 ? `
               <div class="p-3 bg-white rounded-lg">
                 <p class="font-semibold text-gray-800">Convert Lifeskill Powder:</p>
-                <p class="text-gray-700">${best.abidosBatches} batches (${best.abidosBatches * 100} Lifeskill Powder)</p>
-                <p class="text-sm text-gray-600">→ ${best.abidosGained} Abidos Material (Rare)</p>
+                <p class="text-sm text-gray-700">${best.abidosBatches} batches (${best.abidosBatches * 100} Lifeskill Powder)</p>
+                <p class="text-xs text-gray-600">→ ${best.abidosGained} Abidos Material</p>
               </div>` : ''}
           </div>
 
           <div class="bg-green-50 rounded-xl p-6 border-2 border-green-200">
             <h3 class="text-xl font-bold text-gray-800 mb-4">Final Resources</h3>
             <div class="space-y-2">
-              <div class="flex justify-between p-2 bg-white rounded"><span>Normal Material (Gray):</span><span>${best.remNormal}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Uncommon Material (Green):</span><span>${best.remUncommon}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Abidos Material (Rare):</span><span>${best.totalAbidos}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span>Lifeskill Powder:</span><span>${best.remPowders}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Normal Material (Gray):</span><span>${best.remNormal}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Uncommon Material (Green):</span><span>${best.remUncommon}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Abidos Material (Rare):</span><span>${best.totalAbidos}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Lifeskill Powder:</span><span>${best.remPowders}</span></div>
             </div>
           </div>
         </div>`;
