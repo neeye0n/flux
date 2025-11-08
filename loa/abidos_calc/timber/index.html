@@ -134,7 +134,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
             <div class="flex items-center gap-2 mb-4">
-              <i data-lucide="package" class="w-6 h-6 text-blue-600"></i>
+              <i data-lucide="combine" class="w-6 h-6 text-blue-600"></i>
               <h3 class="text-xl font-bold text-gray-800">Optimal Exchange Strategy</h3>
             </div>
             ${best.tb > 0 ? `
@@ -158,12 +158,15 @@
           </div>
 
           <div class="bg-green-50 rounded-xl p-6 border-2 border-green-200">
-            <h3 class="text-xl font-bold text-gray-800 mb-4">Final Resources</h3>
+            <div class="flex items-center gap-2 mb-4">
+              <i data-lucide="boxes" class="w-6 h-6 text-blue-600"></i>
+              <h3 class="text-xl font-bold text-gray-800">Final Resources</h3>
+            </div>
             <div class="space-y-2">
-              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Normal Material (Gray):</span><span>${best.remNormal}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Uncommon Material (Green):</span><span>${best.remUncommon}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Abidos Material (Rare):</span><span>${best.totalAbidos}</span></div>
-              <div class="flex justify-between p-2 bg-white rounded"><span class="text-sm">Lifeskill Powder:</span><span>${best.remPowders}</span></div>
+              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Normal Material (Gray):</span><span>${best.remNormal} <i class="text-xs">(${best.remNormal - (best.crafts * CRAFT_REQ.normal)} left after crafting)</i></span></div>
+              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Uncommon Material (Green):</span><span>${best.remUncommon} <i class="text-xs">(${best.remUncommon - (best.crafts * CRAFT_REQ.uncommon)} left after crafting)</i></span></div>
+              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Abidos Material (Rare):</span><span>${best.totalAbidos} <i class="text-xs">(${best.totalAbidos - (best.crafts * CRAFT_REQ.abidosRare)} left after crafting)</i></span></div>
+              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Lifeskill Powder:</span><span>${best.remPowders}</span></div>
             </div>
           </div>
         </div>`;
