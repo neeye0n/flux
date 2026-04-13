@@ -1,198 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abidos Fusion Material Crafting Calculator</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 p-8">
-  <div class="max-w-5xl mx-auto">
-    <div class="bg-white rounded-2xl shadow-2xl p-8 mb-6">
-      <div class="flex items-center gap-3 mb-6">
-        <i data-lucide="calculator" class="w-8 h-8 text-orange-600"></i>
-        <h1 class="text-3xl font-bold text-gray-800">Abidos Fusion Material Crafting Calculator</h1>
-      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Normal Material (Gray)</label>
-          <input id="normal" type="number" value="11425"
-            class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Uncommon Material (Green)</label>
-          <input id="uncommon" type="number" value="2935"
-            class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Abidos Material</label>
-          <input id="abidosRare" type="number" value="755"
-            class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-        </div>
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-2">Lifeskill Powder</label>
-          <input id="powders" type="number" value="20"
-            class="w-full px-4 py-2 border-2 border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
-        </div>
-      </div>
+<style>
+  :root {
+    --ctp-base: #1e1e2e;
+    --ctp-mantle: #181825;
+    --ctp-surface0: #313244;
+    --ctp-surface1: #45475a;
+    --ctp-surface2: #585b70;
+    --ctp-overlay1: #7f849c;
+    --ctp-text: #cdd6f4;
+    --ctp-subtext0: #a6adc8;
+    --ctp-subtext1: #bac2de;
+    --ctp-lavender: #b4befe;
+    --ctp-teal: #94e2d5;
+    --ctp-peach: #fab387;
+    --ctp-mauve: #cba6f7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ctp-base); color: var(--ctp-text); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
+  .card { background: var(--ctp-mantle); border: 1px solid var(--ctp-surface0); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.25rem; }
+  .header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem; }
+  .header svg { color: var(--ctp-peach); }
+  .header h1 { font-size: 1.875rem; font-weight: 700; color: var(--ctp-text); }
+  .inputs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+  label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--ctp-subtext1); margin-bottom: 6px; }
+  input[type=number] { width: 100%; background: var(--ctp-surface0); border: 2px solid var(--ctp-surface1); color: var(--ctp-text); border-radius: 8px; padding: 8px 16px; font-size: 14px; outline: none; transition: border-color 0.15s; }
+  input[type=number]:focus { border-color: var(--ctp-mauve); box-shadow: 0 0 0 2px rgba(203,166,247,0.3); }
+  .stat-card { background: var(--ctp-surface0); border-radius: 10px; padding: 0.75rem 1rem; text-align: center; }
+  .stat-label { font-size: 0.875rem; font-weight: 600; color: var(--ctp-subtext1); margin-bottom: 4px; }
+  .stat-val { font-size: 1.5rem; font-weight: 700; color: var(--ctp-peach); }
+  .result-hero { background: linear-gradient(135deg, var(--ctp-mauve) 0%, var(--ctp-peach) 100%); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 12px; }
+  .result-hero-num { font-size: 3rem; font-weight: 700; color: var(--ctp-base); }
+  .result-hero-label { font-size: 1.25rem; font-weight: 700; color: var(--ctp-base); opacity: 0.85; }
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .panel { background: var(--ctp-surface0); border-radius: 12px; padding: 1.25rem; border: 2px solid var(--ctp-surface1); }
+  .panel-title { font-size: 1.25rem; font-weight: 700; color: var(--ctp-text); margin-bottom: 1rem; display: flex; align-items: center; gap: 6px; }
+  .panel-title svg { color: var(--ctp-lavender); }
+  .exchange-item { background: var(--ctp-base); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+  .exchange-item p { font-size: 0.875rem; font-weight: 600; color: var(--ctp-text); margin-bottom: 2px; }
+  .exchange-item .sub { font-size: 0.75rem; font-weight: 400; color: var(--ctp-subtext0); }
+  .exchange-item .arrow { font-size: 0.75rem; color: var(--ctp-teal); }
+  .resource-row { display: flex; justify-content: space-between; align-items: center; background: var(--ctp-base); border-radius: 8px; padding: 8px 12px; margin-bottom: 6px; font-size: 0.875rem; }
+  .resource-row span:first-child { color: var(--ctp-subtext1); }
+  .resource-row .val { font-weight: 600; color: var(--ctp-text); }
+  .resource-row em { font-style: italic; color: var(--ctp-overlay1); font-size: 0.75rem; margin-left: 4px; }
+  .req-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .section-title { font-size: 1.125rem; font-weight: 700; color: var(--ctp-text); margin-bottom: 1rem; }
+  .no-exchange { font-size: 0.875rem; color: var(--ctp-subtext0); padding: 8px 0; }
+</style>
 
-      <div id="result-container"></div>
+<div class="wrap">
+  <div class="card">
+    <div class="header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <h1>Abidos Fusion Material Crafting Calculator</h1>
     </div>
 
-    <div class="bg-white rounded-xl shadow-lg p-6">
-      <h3 class="text-lg font-bold text-gray-800 mb-3">Crafting Requirements (per craft)</h3>
-      <div class="grid grid-cols-3 gap-4 text-sm">
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Normal Material (Gray)</p>
-          <p class="text-2xl font-bold text-amber-700">86</p>
-        </div>
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Uncommon Material (Green)</p>
-          <p class="text-2xl font-bold text-amber-700">45</p>
-        </div>
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Abidos Material (Rare)</p>
-          <p class="text-2xl font-bold text-amber-700">33</p>
-        </div>
-      </div>
+    <div class="inputs-grid">
+      <div><label>Normal Material (Gray)</label><input id="normal" type="number" value="11425"></div>
+      <div><label>Uncommon Material (Green)</label><input id="uncommon" type="number" value="2935"></div>
+      <div><label>Abidos Material (Rare)</label><input id="abidosRare" type="number" value="755"></div>
+      <div><label>Lifeskill Powder</label><input id="powders" type="number" value="20"></div>
     </div>
-    <br/>
-    <div class="bg-white rounded-xl shadow-lg p-6">
-      <h3 class="text-lg font-bold text-gray-800 mb-3">Crafting Requirements (40s Batch)</h3>
-      <div class="grid grid-cols-3 gap-4 text-sm">
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Normal Material (Gray)</p>
-          <p class="text-2xl font-bold text-amber-700">3440</p>
-        </div>
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Uncommon Material (Green)</p>
-          <p class="text-2xl font-bold text-amber-700">1800</p>
-        </div>
-        <div class="text-center p-3 bg-amber-100 rounded-lg">
-          <p class="font-semibold text-gray-700">Abidos Material (Rare)</p>
-          <p class="text-2xl font-bold text-amber-700">1320</p>
-        </div>
-      </div>
+
+    <div id="result-container"></div>
+  </div>
+
+  <div class="card">
+    <p class="section-title">Crafting Requirements (per craft)</p>
+    <div class="req-grid">
+      <div class="stat-card"><p class="stat-label">Normal Material (Gray)</p><p class="stat-val">86</p></div>
+      <div class="stat-card"><p class="stat-label">Uncommon Material (Green)</p><p class="stat-val">45</p></div>
+      <div class="stat-card"><p class="stat-label">Abidos Material (Rare)</p><p class="stat-val">33</p></div>
     </div>
   </div>
 
-  <script>
-    const CRAFT_REQ = { normal: 86, uncommon: 45, abidosRare: 33 };
-    const EXCHANGE = {
-      normalToPowder: { cost: 100, powder: 80 },
-      uncommonToPowder: { cost: 50, powder: 80 },
-      powderToAbidos: { cost: 100, abidos: 10 }
-    };
+  <div class="card">
+    <p class="section-title">Bulk Crafting Requirements (4 rows)</p>
+    <div class="req-grid">
+      <div class="stat-card"><p class="stat-label">Normal Material (Gray)</p><p class="stat-val">3440</p></div>
+      <div class="stat-card"><p class="stat-label">Uncommon Material (Green)</p><p class="stat-val">1800</p></div>
+      <div class="stat-card"><p class="stat-label">Abidos Material (Rare)</p><p class="stat-val">1320</p></div>
+    </div>
+  </div>
+</div>
 
-    const inputs = ['normal', 'uncommon', 'abidosRare', 'powders'];
-    inputs.forEach(id => document.getElementById(id).addEventListener('input', calculateOptimal));
+<script>
+  const CRAFT_REQ = { normal: 86, uncommon: 45, abidosRare: 33 };
 
-    function calculateOptimal() {
-      const normal = parseInt(document.getElementById('normal').value) || 0;
-      const uncommon = parseInt(document.getElementById('uncommon').value) || 0;
-      const abidosRare = parseInt(document.getElementById('abidosRare').value) || 0;
-      const powders = parseInt(document.getElementById('powders').value) || 0;
+  ['normal','uncommon','abidosRare','powders'].forEach(id =>
+    document.getElementById(id).addEventListener('input', calculateOptimal)
+  );
 
-      let maxCrafts = 0;
-      let best = null;
+  function calculateOptimal() {
+    const normal = parseInt(document.getElementById('normal').value) || 0;
+    const uncommon = parseInt(document.getElementById('uncommon').value) || 0;
+    const abidosRare = parseInt(document.getElementById('abidosRare').value) || 0;
+    const powders = parseInt(document.getElementById('powders').value) || 0;
 
-      const maxNormalBatches = Math.floor(normal / EXCHANGE.normalToPowder.cost);
-      const maxUncommonBatches = Math.floor(uncommon / EXCHANGE.uncommonToPowder.cost);
+    let maxCrafts = 0, best = null;
+    const maxNB = Math.floor(normal / 100);
+    const maxUB = Math.floor(uncommon / 50);
 
-      for (let tb = 0; tb <= maxNormalBatches; tb++) {
-        for (let ttb = 0; ttb <= maxUncommonBatches; ttb++) {
-          const remNormal = normal - (tb * EXCHANGE.normalToPowder.cost);
-          const remUncommon = uncommon - (ttb * EXCHANGE.uncommonToPowder.cost);
-          const totalPowders = powders + (tb * EXCHANGE.normalToPowder.powder) + (ttb * EXCHANGE.uncommonToPowder.powder);
-
-          const abidosBatches = Math.floor(totalPowders / EXCHANGE.powderToAbidos.cost);
-          const remPowders = totalPowders - (abidosBatches * EXCHANGE.powderToAbidos.cost);
-          const totalAbidos = abidosRare + (abidosBatches * EXCHANGE.powderToAbidos.abidos);
-
-          const crafts = Math.min(
-            Math.floor(remNormal / CRAFT_REQ.normal),
-            Math.floor(remUncommon / CRAFT_REQ.uncommon),
-            Math.floor(totalAbidos / CRAFT_REQ.abidosRare)
-          );
-
-          if (crafts > maxCrafts) {
-            maxCrafts = crafts;
-            best = {
-              tb, ttb,
-              powdersGenerated: tb * 80 + ttb * 80,
-              abidosBatches,
-              abidosGained: abidosBatches * 10,
-              remNormal, remUncommon, totalAbidos, remPowders, crafts,
-              usedNormal: crafts * 86, usedTender: crafts * 45, usedAbidos: crafts * 33,
-              leftoverNormal: remNormal - crafts * 86,
-              leftoverUncommon: remUncommon - crafts * 45,
-              leftoverAbidos: totalAbidos - crafts * 33
-            };
-          }
+    for (let tb = 0; tb <= maxNB; tb++) {
+      for (let ttb = 0; ttb <= maxUB; ttb++) {
+        const remNormal = normal - tb * 100;
+        const remUncommon = uncommon - ttb * 50;
+        const totalPowders = powders + tb * 80 + ttb * 80;
+        const abidosBatches = Math.floor(totalPowders / 100);
+        const remPowders = totalPowders - abidosBatches * 100;
+        const totalAbidos = abidosRare + abidosBatches * 10;
+        const crafts = Math.min(
+          Math.floor(remNormal / 86),
+          Math.floor(remUncommon / 45),
+          Math.floor(totalAbidos / 33)
+        );
+        if (crafts > maxCrafts) {
+          maxCrafts = crafts;
+          best = { tb, ttb, abidosBatches, abidosGained: abidosBatches * 10,
+            remNormal, remUncommon, totalAbidos, remPowders, crafts };
         }
       }
-
-      const container = document.getElementById('result-container');
-      if (!best) {
-        container.innerHTML = '';
-        return;
-      }
-
-      container.innerHTML = `
-        <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl p-6 mb-6 text-white">
-          <div class="flex items-center gap-3 mb-3">
-            <i data-lucide="zap" class="w-8 h-8"></i>
-            <h2 class="text-2xl font-bold">Maximum Crafts Possible</h2>
-          </div>
-          <p class="text-5xl font-bold">${best.crafts}</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
-            <div class="flex items-center gap-2 mb-4">
-              <i data-lucide="combine" class="w-6 h-6 text-blue-600"></i>
-              <h3 class="text-xl font-bold text-gray-800">Optimal Exchange Strategy</h3>
-            </div>
-            ${best.tb > 0 ? `
-              <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Normal Material:</p>
-                <p class="text-sm text-gray-700">${best.tb} batches (${best.tb * 100} Normal Material)</p>
-                <p class="text-xs text-gray-600">→ ${best.tb * 80} Lifeskill Powder</p>
-              </div>` : ''}
-            ${best.ttb > 0 ? `
-              <div class="mb-3 p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Uncommon Material:</p>
-                <p class="text-sm text-gray-700">${best.ttb} batches (${best.ttb * 50} Uncommon Material)</p>
-                <p class="text-xs text-gray-600">→ ${best.ttb * 80} Lifeskill Powder</p>
-              </div>` : ''}
-            ${best.abidosBatches > 0 ? `
-              <div class="p-3 bg-white rounded-lg">
-                <p class="font-semibold text-gray-800">Convert Lifeskill Powder:</p>
-                <p class="text-sm text-gray-700">${best.abidosBatches} batches (${best.abidosBatches * 100} Lifeskill Powder)</p>
-                <p class="text-xs text-gray-600">→ ${best.abidosGained} Abidos Material</p>
-              </div>` : ''}
-          </div>
-
-          <div class="bg-green-50 rounded-xl p-6 border-2 border-green-200">
-            <div class="flex items-center gap-2 mb-4">
-              <i data-lucide="boxes" class="w-6 h-6 text-blue-600"></i>
-              <h3 class="text-xl font-bold text-gray-800">Final Resources</h3>
-            </div>
-            <div class="space-y-2">
-              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Normal Material (Gray):</span><span>${best.remNormal} <i class="text-xs">(${best.remNormal - (best.crafts * CRAFT_REQ.normal)} left after crafting)</i></span></div>
-              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Uncommon Material (Green):</span><span>${best.remUncommon} <i class="text-xs">(${best.remUncommon - (best.crafts * CRAFT_REQ.uncommon)} left after crafting)</i></span></div>
-              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Abidos Material (Rare):</span><span>${best.totalAbidos} <i class="text-xs">(${best.totalAbidos - (best.crafts * CRAFT_REQ.abidosRare)} left after crafting)</i></span></div>
-              <div class="flex justify-between p-2 bg-white rounded text-sm"><span>Lifeskill Powder:</span><span>${best.remPowders}</span></div>
-            </div>
-          </div>
-        </div>`;
-      lucide.createIcons();
     }
 
-    calculateOptimal();
-    lucide.createIcons();
-  </script>
-</body>
-</html>
+    const container = document.getElementById('result-container');
+    if (!best) { container.innerHTML = ''; return; }
+
+    const lr = best.remNormal - best.crafts * 86;
+    const lu = best.remUncommon - best.crafts * 45;
+    const la = best.totalAbidos - best.crafts * 33;
+
+    container.innerHTML = `
+      <div class="result-hero">
+        <div>
+          <p class="result-hero-label">Maximum Crafts Possible</p>
+          <p class="result-hero-num">${best.crafts}</p>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="panel">
+          <p class="panel-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+            Optimal Exchange Strategy
+          </p>
+          ${best.tb > 0 ? `<div class="exchange-item"><p>Convert Normal Material:</p><p class="sub">${best.tb} batches (${best.tb * 100} Normal Material)</p><p class="arrow">→ ${best.tb * 80} Lifeskill Powder</p></div>` : ''}
+          ${best.ttb > 0 ? `<div class="exchange-item"><p>Convert Uncommon Material:</p><p class="sub">${best.ttb} batches (${best.ttb * 50} Uncommon Material)</p><p class="arrow">→ ${best.ttb * 80} Lifeskill Powder</p></div>` : ''}
+          ${best.abidosBatches > 0 ? `<div class="exchange-item"><p>Convert Lifeskill Powder:</p><p class="sub">${best.abidosBatches} batches (${best.abidosBatches * 100} Lifeskill Powder)</p><p class="arrow">→ ${best.abidosGained} Abidos Material</p></div>` : ''}
+          ${best.tb === 0 && best.ttb === 0 && best.abidosBatches === 0 ? `<p class="no-exchange">No exchanges needed.</p>` : ''}
+        </div>
+        <div class="panel">
+          <p class="panel-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
+            Final Resources
+          </p>
+          <div class="resource-row"><span>Normal Material (Gray):</span><span class="val">${best.remNormal} <em>(${lr} left after crafting)</em></span></div>
+          <div class="resource-row"><span>Uncommon Material (Green):</span><span class="val">${best.remUncommon} <em>(${lu} left after crafting)</em></span></div>
+          <div class="resource-row"><span>Abidos Material (Rare):</span><span class="val">${best.totalAbidos} <em>(${la} left after crafting)</em></span></div>
+          <div class="resource-row"><span>Lifeskill Powder:</span><span class="val">${best.remPowders}</span></div>
+        </div>
+      </div>`;
+  }
+
+  calculateOptimal();
+</script>
