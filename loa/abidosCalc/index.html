@@ -153,9 +153,9 @@
         const remPowders = totalPowders - abidosBatches * 100;
         const totalAbidos = abidosRare + abidosBatches * 10;
         const crafts = Math.min(
-          Math.floor(remNormal / 86),
-          Math.floor(remUncommon / 45),
-          Math.floor(totalAbidos / 33)
+          Math.floor(remNormal / CRAFT_REQ.normal),
+          Math.floor(remUncommon / CRAFT_REQ.uncommon),
+          Math.floor(totalAbidos / CRAFT_REQ.abidosRare)
         );
         if (crafts > maxCrafts) {
           maxCrafts = crafts;
@@ -168,9 +168,9 @@
     const container = document.getElementById('result-container');
     if (!best) { container.innerHTML = ''; return; }
 
-    const lr = best.remNormal - best.crafts * 86;
-    const lu = best.remUncommon - best.crafts * 45;
-    const la = best.totalAbidos - best.crafts * 33;
+    const lr = best.remNormal - best.crafts * CRAFT_REQ.normal;
+    const lu = best.remUncommon - best.crafts * CRAFT_REQ.uncommon;
+    const la = best.totalAbidos - best.crafts * CRAFT_REQ.abidosRare;
 
     container.innerHTML = `
       <div class="result-hero">
