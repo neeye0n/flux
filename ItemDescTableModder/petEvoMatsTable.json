@@ -842,5 +842,29 @@
       "matName": "Bloody Coin",
       "qty": 50
     }
+  ],
+  "Bebra": [
+    {
+      "matId": 579,
+      "matName": "Fresh Fish",
+      "qty": 100
+    },
+    {
+      "matId": 610,
+      "matName": "Yggdrasil Leaf",
+      "qty": 1
+    }   
+  ],
+  "Skelion": [
+    {
+      "matId": 932,
+      "matName": "Skel-Bone",
+      "qty": 100
+    },
+    {
+      "matId": 983,
+      "matName": "Black Dyestuffs",
+      "qty": 1
+    }   
   ]
 }

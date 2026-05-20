@@ -219,6 +219,23 @@
       "qty": 5
     }
   ],
+  "Ghost Ship Captain": [
+    {
+      "matId": 1000831,
+      "matName": "Shiny Seaweed",
+      "qty": 15
+    },
+    {
+      "matId": 746,
+      "matName": "Glass Bead",
+      "qty": 15
+    },
+    {
+      "matId": 943,
+      "matName": "Solid Shell",
+      "qty": 15
+    }
+  ],
   "Gloom": [
     {
       "matId": 7563,
@@ -253,6 +270,23 @@
       "qty": 25
     }
   ],
+  "Gopinich": [
+    {
+      "matId": 7762,
+      "matName": "Yaga's Pestle",
+      "qty": 40
+    },
+    {
+      "matId": 918,
+      "matName": "Sticky Webfoot",
+      "qty": 30
+    },
+    {
+      "matId": 510,
+      "matName": "Blue Herb",
+      "qty": 5
+    }
+  ],
   "Ifrit": [
     {
       "matId": 7097,
@@ -283,7 +317,7 @@
     },
     {
       "matId": 7054,
-      "matName": "brigan",
+      "matName": "Brigan",
       "qty": 20
     }
   ],
@@ -523,29 +557,29 @@
     {
       "matId": 967,
       "matName": "Turtle Shell",
-      "qty": 50
+      "qty": 40
     },
     {
       "matId": 7070,
       "matName": "Broken Shell",
-      "qty": 15
+      "qty": 10
     },
     {
       "matId": 7072,
       "matName": "Old Shuriken",
-      "qty": 15
+      "qty": 10
     }
   ],
-  "Randgris": [
+  "Valkyrie Randgris": [
     {
       "matId": 7063,
       "matName": "Soft Feather",
-      "qty": 15
+      "qty": 20
     },
     {
       "matId": 7511,
       "matName": "Rune of Darkness",
-      "qty": 30
+      "qty": 40
     }
   ],
   "Vesper": [
@@ -587,87 +621,16 @@
       "qty": 40
     }
   ],
-  "Angry Moonie": [
+  "Wounded Morocc": [
     {
-      "matId": 25256,
-      "matName": "Hazy Dream Fragment",
-      "qty": 5
+      "matId": 7798,
+      "matName": "Fragment of Darkness",
+      "qty": 25
     },
     {
-      "matId": 23228,
-      "matName": "Hazy Mooncake",
-      "qty": 5
-    },
-    {
-      "matId": 25257,
-      "matName": "Bloody Love Letter",
-      "qty": 5
-    },
-    {
-      "matId": 25258,
-      "matName": "Broken Arrow",
-      "qty": 5
-    },
-    {
-      "matId": 1022,
-      "matName": "Nine Tails",
-      "qty": 20
-    }
-  ],
-  "Fur. Dracula": [
-    {
-      "matId": 25264,
-      "matName": "Cluster of Nightmares",
-      "qty": 10
-    },
-    {
-      "matId": 25267,
-      "matName": "Suspicious Pentacle",
-      "qty": 10
-    },
-    {
-      "matId": 25266,
-      "matName": "Dried Yggdrasil Leaf",
-      "qty": 10
-    },
-    {
-      "matId": 25263,
-      "matName": "Short Bat Hair",
-      "qty": 10
-    }
-  ],
-  "Gopinich": [
-    {
-      "matId": 7762,
-      "matName": "Yaga's Pestle",
-      "qty": 40
-    },
-    {
-      "matId": 918,
-      "matName": "Sticky Webfoot",
-      "qty": 40
-    },
-    {
-      "matId": 510,
-      "matName": "Blue Herb",
-      "qty": 5
-    }
-  ],
-  "Ingrid/Reginleif": [
-    {
-      "matId": 7063,
-      "matName": "Soft Feather",
-      "qty": 15
-    },
-    {
-      "matId": 7511,
-      "matName": "Rune of Darkness",
-      "qty": 30
-    },
-    {
-      "matId": 25767,
-      "matName": "Angel's Dream",
-      "qty": 2
+      "matId": 7799,
+      "matName": "Crystal of Darkness",
+      "qty": 25
     }
   ]
 }
