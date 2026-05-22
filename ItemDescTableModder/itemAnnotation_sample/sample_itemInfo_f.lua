@@ -5,8 +5,11 @@
 -- Last updated: 20250515
 
 -- Load custom made itemAnnotations.lua
--- REMINDER: Always use Windows 1252 Encoding
 dofile("System/LuaFiles514/itemAnnotations.lua")
+
+local function trim(s)
+    return s:match("^%s*(.-)%s*$")
+end
 
 function main()
 	for ItemID, DESC in pairs(tbl) do
@@ -16,10 +19,10 @@ function main()
 		local ann = itemAnnotations[ItemID]
 		if ann ~= nil then
 			if ann.nameTagPrefix ~= nil and ann.nameTagPrefix ~= "" then
-				displayName = ann.nameTagPrefix .. " " .. displayName
+				displayName = trim(ann.nameTagPrefix) .. " " .. trim(displayName)
 			end
 			if ann.nameTagSuffix ~= nil and ann.nameTagSuffix ~= "" then
-				displayName = displayName .. " " .. ann.nameTagSuffix
+				displayName = trim(displayName) .. " " .. trim(ann.nameTagSuffix)
 			end
 		end
 
@@ -111,14 +114,14 @@ function main()
 					if DESC.Server ~= nil and ItemDatabase[DESC.Server] ~= nil then
 						Database = ItemDatabase[DESC.Server]
 					end
-				-- START Unify Item ID and Item DB Url
+				-- START Unify Item ID and Item Url
 					-- AddItemIdentifiedDesc(ItemID, "<URL>" .. Database.Name .. "<INFO>" .. Database.URL .. ItemID .. "</INFO></URL>")
 					AddItemIdentifiedDesc(ItemID, "^007ACCID:^FFB300 " .. ItemID .."  <URL>See more…<INFO>" .. Database.URL .. ItemID .. "</INFO></URL>")
 				elseif DisplayCustomDB == true and DESC.Custom == true then
 					-- AddItemIdentifiedDesc(ItemID, "<URL>" .. ItemDatabase["Custom"].Name .. "<INFO>" .. ItemDatabase["Custom"].URL .. ItemID .. "</INFO></URL>")
 					AddItemIdentifiedDesc(ItemID, "^007ACCID:^FFB300 " .. ItemID .."  <URL>See more…<INFO>" .. ItemDatabase["Custom"].URL .. ItemID .. "</INFO></URL>")
 				end
-				-- END Unify Item ID and Item DB Url
+				-- END Unify Item ID and Item Url
 			end
 		end
 		if DESC.EffectID~= nil then
