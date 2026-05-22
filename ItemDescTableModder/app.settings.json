@@ -1,4 +1,6 @@
 {
+  "resourceUrl": "https://neeye0n.github.io/flux/ItemDescTableModder/",
+  "enableItemId": 0,
   "itemIdDescTextColor": "007ACC",
   "itemIdDescValueColor": "FFB300",
   "brewingConfig": {
@@ -6,7 +8,7 @@
     "enableDescriptions": 1,
     "enableDetailedDescriptions": 0,
     "tagText": "Brew",
-    "headerText": "Brewing Material",
+    "headerText": "Brewing Ingredient",
     "descriptionHeaderColor": "00897B",
     "descriptionRowsColor": "43A047"
   },
@@ -15,7 +17,7 @@
     "enableDescriptions": 1,
     "enableDetailedDescriptions": 0,
     "tagText": "Cook",
-    "headerText": "Cooking Material",
+    "headerText": "Cooking Ingredient",
     "descriptionHeaderColor": "EF6C00",
     "descriptionRowsColor": "6D4C41"
   },
@@ -42,7 +44,7 @@
     "enableDescriptions": 1,
     "enableDetailedDescriptions": 1,
     "tagText": "Pet",
-    "headerText": "Pet Evo Material",
+    "headerText": "Pet Evo Requirement",
     "descriptionHeaderColor": "5C6BC0",
     "descriptionRowsColor": "7986CB"
   }

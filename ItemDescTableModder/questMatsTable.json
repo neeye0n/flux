@@ -2,610 +2,747 @@
   "Anubis Helm": [
     {
       "matId": 7211,
+      "matName": "Fragment of Rosatta Stone",
       "qty": 3
     },
     {
       "matId": 7113,
+      "matName": "Broken Pharaoh Emblem",
       "qty": 3
     },
     {
       "matId": 4138,
+      "matName": "Anubis Card",
       "qty": 1
     },
     {
       "matId": 1009,
+      "matName": "Hand of God",
       "qty": 1
     },
     {
       "matId": 1045,
+      "matName": "Cultish Masque",
       "qty": 500
     }
   ],
   "Benevolent Guardian": [
     {
       "matId": 2217,
+      "matName": "Biretta",
       "qty": 1
     },
     {
       "matId": 2206,
+      "matName": "Wedding Veil",
       "qty": 1
     },
     {
       "matId": 2626,
+      "matName": "Rosary",
       "qty": 1
     },
     {
       "matId": 7153,
+      "matName": "Worn-out Kimono",
       "qty": 100
     }
   ],
   "Hunting Cap": [
     {
       "matId": 5108,
+      "matName": "Renown Detective's Cap",
       "qty": 1
     },
     {
       "matId": 919,
+      "matName": "Animal Skin",
       "qty": 1000
     },
     {
       "matId": 948,
+      "matName": "Bear's Footskin",
       "qty": 500
     },
     {
       "matId": 979,
+      "matName": "Darkgreen Dyestuffs",
       "qty": 1
     },
     {
       "matId": 2285,
+      "matName": "Apple of Archer",
       "qty": 1
     }
   ],
   "Lunatic Hat": [
     {
       "matId": 710,
+      "matName": "Illusion Flower",
       "qty": 3
     },
     {
       "matId": 704,
+      "matName": "Aloe",
       "qty": 3
     },
     {
       "matId": 703,
+      "matName": "Hinalle",
       "qty": 3
     },
     {
       "matId": 905,
+      "matName": "Stem",
       "qty": 500
     },
     {
       "matId": 906,
+      "matName": "Pointed Scale",
       "qty": 500
     },
     {
       "matId": 4006,
+      "matName": "Lunatic Card",
       "qty": 1
     }
   ],
   "Witch's Pumpkin Hat": [
     {
       "matId": 1233,
+      "matName": "Exorciser",
       "qty": 1
     },
     {
       "matId": 7019,
+      "matName": "Loki's Whispers",
       "qty": 1
     },
     {
       "matId": 2252,
+      "matName": "Wizard Hat",
       "qty": 5
     },
     {
       "matId": 1000,
+      "matName": "Star Crumb",
       "qty": 300
     },
     {
       "matId": 7225,
+      "matName": "Pumpkin Lantern",
       "qty": 500
     },
     {
       "matId": 4111,
+      "matName": "Strouf Card",
       "qty": 1
     }
   ],
   "Rideword Hat": [
     {
       "matId": 5070,
+      "matName": "Hot-blooded Headband",
       "qty": 1
     },
     {
       "matId": 7015,
+      "matName": "Bookclip in Memory",
       "qty": 300
     },
     {
       "matId": 1006,
+      "matName": "Old Magic Book",
       "qty": 150
     },
     {
       "matId": 4358,
+      "matName": "Seyren Windsor Card",
       "qty": 1
     },
     {
       "matId": 4346,
+      "matName": "Egnigem Cenia Card",
       "qty": 3
     },
     {
       "matId": 4185,
+      "matName": "Rideword Card",
       "qty": 3
     }
   ],
   "Shrine Maiden Hat": [
     {
       "matId": 5063,
+      "matName": "Giant Band Aid",
       "qty": 1
     },
     {
       "matId": 1099,
+      "matName": "Worn-out Prison Uniform",
       "qty": 300
     },
     {
       "matId": 1098,
+      "matName": "Manacles",
       "qty": 300
     },
     {
       "matId": 4364,
+      "matName": "Margaretha Sorin Card",
       "qty": 1
     },
     {
       "matId": 4349,
+      "matName": "Errende Ebecee Card",
       "qty": 3
     },
     {
       "matId": 4293,
+      "matName": "Cookie Card",
       "qty": 3
     }
   ],
   "Hermode Cap": [
     {
       "matId": 5021,
+      "matName": "Grief for Greed",
       "qty": 1
     },
     {
       "matId": 7264,
+      "matName": "Dry Sand",
       "qty": 300
     },
     {
       "matId": 7267,
+      "matName": "Tiger Panty",
       "qty": 300
     },
     {
       "matId": 4362,
+      "matName": "Howard Alt-Eisen Card",
       "qty": 1
     },
     {
       "matId": 4347,
+      "matName": "Armeyer Dinze Card",
       "qty": 3
     },
     {
       "matId": 4233,
+      "matName": "Baby Leopard Card",
       "qty": 3
     }
   ],
   "Mercury Riser": [
     {
       "matId": 2293,
+      "matName": "Pretend Murdered",
       "qty": 1
     },
     {
       "matId": 1020,
+      "matName": "Black Hair",
       "qty": 300
     },
     {
       "matId": 1094,
+      "matName": "Short Daenggie",
       "qty": 300
     },
     {
       "matId": 4360,
+      "matName": "Eremes Guile Card",
       "qty": 1
     },
     {
       "matId": 4348,
+      "matName": "Wickebine Tres Card",
       "qty": 3
     },
     {
       "matId": 4257,
+      "matName": "Wild Rose Card",
       "qty": 3
     }
   ],
   "Skull Cap": [
     {
       "matId": 5012,
+      "matName": "Ph.D Hat",
       "qty": 1
     },
     {
       "matId": 1033,
+      "matName": "Maneater Root",
       "qty": 300
     },
     {
       "matId": 7149,
+      "matName": "Yellow Plate",
       "qty": 300
     },
     {
       "matId": 4366,
+      "matName": "Kathryne Keyron Card",
       "qty": 1
     },
     {
       "matId": 4350,
+      "matName": "Laurell Weinder Card",
       "qty": 3
     },
     {
       "matId": 4325,
+      "matName": "Harpy Card",
       "qty": 3
     }
   ],
   "Alice Doll": [
     {
       "matId": 7047,
+      "matName": "Alice's Apron",
       "qty": 150
     },
     {
       "matId": 661,
+      "matName": "Soft Apron",
       "qty": 3
     },
     {
       "matId": 5170,
+      "matName": "Feather Beret",
       "qty": 1
     },
     {
       "matId": 4035,
+      "matName": "Hydra Card",
       "qty": 2
     }
   ],
   "Telling Doll Hat": [
     {
       "matId": 2417,
+      "matName": "Fricco's Shoes",
       "qty": 3
     },
     {
       "matId": 661,
+      "matName": "Soft Apron",
       "qty": 3
     },
     {
       "matId": 5170,
+      "matName": "Feather Beret",
       "qty": 1
     },
     {
       "matId": 4058,
+      "matName": "Thara Frog Card",
       "qty": 2
     }
   ],
   "Tam": [
     {
       "matId": 1604,
+      "matName": "Wand",
       "qty": 1
     },
     {
       "matId": 7166,
+      "matName": "Soft Silk",
       "qty": 25
     },
     {
       "matId": 5120,
+      "matName": "Bucket Hat",
       "qty": 1
     },
     {
       "matId": 4023,
+      "matName": "Baby Desert Wolf Card",
       "qty": 1
     }
   ],
   "Koneko Hat": [
     {
       "matId": 1006,
+      "matName": "Old Magicbook",
       "qty": 1
     },
     {
       "matId": 7206,
+      "matName": "Black Cat Doll",
       "qty": 150
     },
     {
       "matId": 982,
+      "matName": "White Dyestuffs",
       "qty": 3
     }
   ],
   "Lif Doll Hat": [
     {
       "matId": 520,
+      "matName": "Hinalle Leaflet",
       "qty": 100
     },
     {
       "matId": 7100,
+      "matName": "Sharp Leaf",
       "qty": 100
     },
     {
       "matId": 5141,
+      "matName": "Marionette Doll",
       "qty": 1
     }
   ],
   "Chick Hat": [
     {
       "matId": 574,
+      "matName": "Egg",
       "qty": 1
     },
     {
       "matId": 916,
+      "matName": "Feather of Birds",
       "qty": 100
     },
     {
       "matId": 508,
+      "matName": "Yellow Herb",
       "qty": 25
     }
   ],
   "Pecopeco Hairband": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 5118,
+      "matName": "Puppy Headband",
       "qty": 1
     },
     {
       "matId": 7101,
+      "matName": "Peco Peco Feather",
       "qty": 500
     },
     {
       "matId": 6405,
+      "matName": "Cendrawasih Feather",
       "qty": 500
     }
   ],
   "Hawk Eye": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2276,
+      "matName": "Angled Glasses",
       "qty": 1
     },
     {
       "matId": 917,
+      "matName": "Talon",
       "qty": 500
     },
     {
       "matId": 919,
+      "matName": "Animal Skin",
       "qty": 500
     }
   ],
   "Pecopeco Wing Ears": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2213,
+      "matName": "Kitty Band",
       "qty": 1
     },
     {
       "matId": 7101,
+      "matName": "Peco Peco Feather",
       "qty": 500
     },
     {
       "matId": 6405,
+      "matName": "Cendrawasih Feather",
       "qty": 500
     }
   ],
   "Filir's Pinions": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 1724,
+      "matName": "Dragon Wing",
       "qty": 1
     },
     {
       "matId": 7168,
+      "matName": "Giant Butterfly Wing",
       "qty": 500
     },
     {
       "matId": 1039,
+      "matName": "Little Evil Wing",
       "qty": 500
     }
   ],
   "Fish In Mouth": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2267,
+      "matName": "Cigarette",
       "qty": 2
     },
     {
       "matId": 951,
+      "matName": "Fin",
       "qty": 500
     },
     {
       "matId": 966,
+      "matName": "Clam Flesh",
       "qty": 500
     }
   ],
   "Rainbow Scarf": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 622,
+      "matName": "Rainbow Carrot",
       "qty": 10
     },
     {
       "matId": 1013,
+      "matName": "Rainbow Shell",
       "qty": 500
     },
     {
       "matId": 10019,
+      "matName": "Red Scarf",
       "qty": 5
     }
   ],
   "Gangster Scarf": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2265,
+      "matName": "Gangster Mask",
       "qty": 1
     },
     {
       "matId": 1034,
+      "matName": "Blue Hair",
       "qty": 500
     },
     {
       "matId": 7195,
+      "matName": "Slingshot",
       "qty": 500
     }
   ],
   "Crimson Rose": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2207,
+      "matName": "Fancy Flower",
       "qty": 1
     },
     {
       "matId": 712,
+      "matName": "Flower",
       "qty": 500
     },
     {
       "matId": 629,
+      "matName": "Singing Flower",
       "qty": 500
     }
   ],
   "Spiked Scarf": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2297,
+      "matName": "Goblin Mask",
       "qty": 1
     },
     {
       "matId": 1027,
+      "matName": "Porcupine Quill",
       "qty": 500
     },
     {
       "matId": 1021,
+      "matName": "Dokebi Horn",
       "qty": 500
     }
   ],
   "Well-Chewed Pencil": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2272,
+      "matName": "Stop Post",
       "qty": 1
     },
     {
       "matId": 1066,
+      "matName": "Fine-grained Trunk",
       "qty": 500
     },
     {
       "matId": 7201,
+      "matName": "Log",
       "qty": 500
     }
   ],
   "Umbala Spirit": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2270,
+      "matName": "Romantic Leaf",
       "qty": 2
     },
     {
       "matId": 7194,
+      "matName": "Soft Blade of Grass",
       "qty": 500
     },
     {
       "matId": 7197,
+      "matName": "Tough Vines",
       "qty": 500
     }
   ],
   "Pirate Dagger": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 2287,
+      "matName": "Pirate Bandana",
       "qty": 2
     },
     {
       "matId": 7013,
+      "matName": "Coral Reef",
       "qty": 500
     },
     {
       "matId": 932,
+      "matName": "Skel-Bone",
       "qty": 500
     }
   ],
   "Donut in Mouth": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 5024,
+      "matName": "Cake Hat",
       "qty": 1
     },
     {
       "matId": 539,
+      "matName": "Piece of Cake",
       "qty": 250
     },
     {
       "matId": 538,
+      "matName": "Well-baked Cookie",
       "qty": 250
     }
   ],
   "Scissorhand Model": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 1260,
+      "matName": "Sharpened Legbone of Ghoul",
       "qty": 2
     },
     {
       "matId": 1764,
+      "matName": "Sharp Arrow",
       "qty": 2000
     },
     {
       "matId": 963,
+      "matName": "Sharp Scale",
       "qty": 500
     }
   ],
   "Advanced Assassin Mask": [
     {
       "matId": 25074,
+      "matName": "Old Coin",
       "qty": 100
     },
     {
       "matId": 1223,
+      "matName": "Fortune Sword",
       "qty": 2
     },
     {
       "matId": 7110,
+      "matName": "Broken Sword",
       "qty": 500
     },
     {
       "matId": 1056,
+      "matName": "Grit",
       "qty": 500
     }
   ]
