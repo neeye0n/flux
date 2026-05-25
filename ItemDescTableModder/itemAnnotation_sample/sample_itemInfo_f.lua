@@ -64,8 +64,17 @@ function main()
 				AddItemIdentifiedDesc(ItemID, "^0000CCServer: "..CServerColour..CServerName.."^000000")
 			end
 			if DisplayItemID == 1 then
-				AddItemIdentifiedDesc(ItemID, "^007ACCItem ID:^FFB300 "..ItemID)
+				AddItemIdentifiedDesc(ItemID, "^0000CCID:^000000 "..ItemID)
 			end
+
+			-- START Read and Apply item annotations
+			if itemAnnotations ~= nil and itemAnnotations[ItemID] ~= nil and itemAnnotations[ItemID].descLines ~= nil then
+				for _, line in ipairs(itemAnnotations[ItemID].descLines) do
+					AddItemIdentifiedDesc(ItemID, line)
+				end
+			end
+			-- END Read and Apply item annotations
+			
 			AddItemIdentifiedDesc(ItemID, "________________________")
 		end
 		if RemoveWeight == true then
