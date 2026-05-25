@@ -219,7 +219,7 @@
       "qty": 5
     }
   ],
-  "Ghost Ship Captain": [
+  "GShip Capt.": [
     {
       "matId": 1000831,
       "matName": "Shiny Seaweed",
@@ -362,7 +362,7 @@
       "qty": 30
     }
   ],
-  "Thanatos": [
+  "Thana": [
     {
       "matId": 7436,
       "matName": "Fragment of Agony",
@@ -541,7 +541,7 @@
       "qty": 20
     }
   ],
-  "Tao Gunka": [
+  "TGK": [
     {
       "matId": 1048,
       "matName": "Horrendous Hair",
@@ -570,7 +570,7 @@
       "qty": 10
     }
   ],
-  "Valkyrie Randgris": [
+  "Randgris": [
     {
       "matId": 7063,
       "matName": "Soft Feather",
@@ -621,7 +621,7 @@
       "qty": 40
     }
   ],
-  "Wounded Morocc": [
+  "W. Morocc": [
     {
       "matId": 7798,
       "matName": "Fragment of Darkness",
