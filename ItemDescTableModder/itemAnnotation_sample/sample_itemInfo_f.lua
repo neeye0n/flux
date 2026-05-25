@@ -116,10 +116,10 @@ function main()
 					end
 				-- START Unify Item ID and Item Url
 					-- AddItemIdentifiedDesc(ItemID, "<URL>" .. Database.Name .. "<INFO>" .. Database.URL .. ItemID .. "</INFO></URL>")
-					AddItemIdentifiedDesc(ItemID, "^007ACCID:^FFB300 " .. ItemID .."  <URL>See more…<INFO>" .. Database.URL .. ItemID .. "</INFO></URL>")
+					AddItemIdentifiedDesc(ItemID, "^0000CCID:^000000 " .. ItemID .."  <URL>[»]<INFO>" .. Database.URL .. ItemID .. "</INFO></URL>")
 				elseif DisplayCustomDB == true and DESC.Custom == true then
 					-- AddItemIdentifiedDesc(ItemID, "<URL>" .. ItemDatabase["Custom"].Name .. "<INFO>" .. ItemDatabase["Custom"].URL .. ItemID .. "</INFO></URL>")
-					AddItemIdentifiedDesc(ItemID, "^007ACCID:^FFB300 " .. ItemID .."  <URL>See more…<INFO>" .. ItemDatabase["Custom"].URL .. ItemID .. "</INFO></URL>")
+					AddItemIdentifiedDesc(ItemID, "^0000CCID:^000000 " .. ItemID .."  <URL>[»]<INFO>" .. ItemDatabase["Custom"].URL .. ItemID .. "</INFO></URL>")
 				end
 				-- END Unify Item ID and Item Url
 			end
