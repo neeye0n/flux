@@ -1,0 +1,77 @@
+{
+  "Langry (gef_fild07 321/193)": {
+    "matId": 914,
+    "matName": "Fluff",
+    "qty": 25
+  },
+  "Halgus (gef_fild04 191/54)": {
+    "matId": 915,
+    "matName": "Chrysalis",
+    "qty": 25
+  },
+  "Gregor (moc_fild02 74/329)": {
+    "matId": 925,
+    "matName": "Bill of Birds",
+    "qty": 25
+  },
+  "Laertes (prt_fild04 356/148)": {
+    "matId": 924,
+    "matName": "Powder of Butterfly",
+    "qty": 25
+  },
+  "Nutters (mjolnir_01 293/20)": {
+    "matId": 1026,
+    "matName": "Acorn",
+    "qty": 25
+  },
+  "Yullo (mjolnir_01 296/29)": {
+    "matId": 1027,
+    "matName": "Porcupine Spike",
+    "qty": 25
+  },
+  "Shone (moc_fild17 208/346)": {
+    "matId": 1055,
+    "matName": "Earthworm Peeling",
+    "qty": 25
+  },
+  "Private Jeremy (moc_fild11 57/138)": {
+    "matId": 953,
+    "matName": "Stone Heart",
+    "qty": 25
+  },
+  "Lemly (moc_fild17 66/273)": {
+    "matId": 1012,
+    "matName": "Lizard Scruff",
+    "qty": 25
+  },
+  "Li (pay_fild10 108/357)": {
+    "matId": 1021,
+    "matName": "Dokebi Horn",
+    "qty": 50
+  },
+  "Lella (ayo_fild01 44/241)": {
+    "matId": 7198,
+    "matName": "Great Leaf",
+    "qty": 50
+  },
+  "Cuir (cmd_fild01 362/256)": {
+    "matId": 7003,
+    "matName": "Anolian Skin",
+    "qty": 20
+  },
+  "Local Villager (ein_fild01 43/249)": {
+    "matId": 7119,
+    "matName": "Bacillus",
+    "qty": 50
+  },
+  "Lilla (um_fild01 34/281)": {
+    "matId": 7100,
+    "matName": "Sharp Leaf",
+    "qty": 50
+  },
+  "Vegetable Farmer (ein_fild06 82/171)": {
+    "matId": 7106,
+    "matName": "Goat's Horn",
+    "qty": 50
+  }
+}
