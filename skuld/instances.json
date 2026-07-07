@@ -560,7 +560,7 @@
     {
       "entryId": 9100028,
       "label": "Moonlight Flower",
-      "alt-label": "Moony",
+      "alt-label": "Moonie",
       "materials": [
         {
           "matId": 1022,
@@ -582,7 +582,7 @@
     {
       "entryId": 9100029,
       "label": "Orc Hero",
-      "alt-label": "O.Hero",
+      "alt-label": "OrcH.",
       "materials": [
         {
           "matId": 7002,
@@ -599,7 +599,7 @@
     {
       "entryId": 9100030,
       "label": "Orc Lord",
-      "alt-label": "O.Lord",
+      "alt-label": "OrcL.",
       "materials": [
         {
           "matId": 931,
@@ -699,7 +699,7 @@
     {
       "entryId": 9100035,
       "label": "Samurai Specter",
-      "alt-label": "S.Specter",
+      "alt-label": "SamuraiS.",
       "materials": [
         {
           "matId": 7156,
@@ -777,7 +777,7 @@
     {
       "entryId": 9100039,
       "label": "Valkyrie Randgris",
-      "alt-label": "VR",
+      "alt-label": "Randgris",
       "materials": [
         {
           "matId": 7063,
@@ -843,7 +843,7 @@
     {
       "entryId": 9100042,
       "label": "Wounded Morocc",
-      "alt-label": "Wounded Morocc",
+      "alt-label": "W.Morocc",
       "materials": [
         {
           "matId": 7798,
