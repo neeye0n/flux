@@ -16,7 +16,7 @@
     {
       "entryId": 9100001,
       "label": "Amon Ra",
-      "alt-label": "",
+      "alt-label": "Amon Ra",
       "materials": [
         {
           "matId": 930,
@@ -38,7 +38,7 @@
     {
       "entryId": 9100002,
       "label": "Atroce",
-      "alt-label": "",
+      "alt-label": "Atroce",
       "materials": [
         {
           "matId": 919,
@@ -55,7 +55,7 @@
     {
       "entryId": 9100003,
       "label": "Baphomet",
-      "alt-label": "",
+      "alt-label": "Bapho",
       "materials": [
         {
           "matId": 1031,
@@ -77,7 +77,7 @@
     {
       "entryId": 9100004,
       "label": "Beelzebub",
-      "alt-label": "",
+      "alt-label": "Bee",
       "materials": [
         {
           "matId": 7752,
@@ -99,7 +99,7 @@
     {
       "entryId": 9100005,
       "label": "Bio3 MVPs",
-      "alt-label": "",
+      "alt-label": "Bio3",
       "materials": [
         {
           "matId": 7345,
@@ -116,7 +116,7 @@
     {
       "entryId": 9100006,
       "label": "Dark Lord",
-      "alt-label": "",
+      "alt-label": "DL",
       "materials": [
         {
           "matId": 958,
@@ -133,7 +133,7 @@
     {
       "entryId": 9100007,
       "label": "Detale",
-      "alt-label": "",
+      "alt-label": "Detale",
       "materials": [
         {
           "matId": 7445,
@@ -160,7 +160,7 @@
     {
       "entryId": 9100008,
       "label": "Doppelganger",
-      "alt-label": "",
+      "alt-label": "Doppel",
       "materials": [
         {
           "matId": 944,
@@ -182,7 +182,7 @@
     {
       "entryId": 9100009,
       "label": "Dracula",
-      "alt-label": "",
+      "alt-label": "Dracula",
       "materials": [
         {
           "matId": 7006,
@@ -204,7 +204,7 @@
     {
       "entryId": 9100010,
       "label": "Drake",
-      "alt-label": "",
+      "alt-label": "Drake",
       "materials": [
         {
           "matId": 932,
@@ -221,7 +221,7 @@
     {
       "entryId": 9100011,
       "label": "Eddga",
-      "alt-label": "",
+      "alt-label": "Eddga",
       "materials": [
         {
           "matId": 7064,
@@ -238,7 +238,7 @@
     {
       "entryId": 9100012,
       "label": "Egnigem Cenia",
-      "alt-label": "",
+      "alt-label": "Bio2",
       "materials": [
         {
           "matId": 7345,
@@ -255,7 +255,7 @@
     {
       "entryId": 9100013,
       "label": "Evil Snake Lord",
-      "alt-label": "",
+      "alt-label": "ESL",
       "materials": [
         {
           "matId": 7162,
@@ -272,7 +272,7 @@
     {
       "entryId": 9100014,
       "label": "Fallen Bishop",
-      "alt-label": "",
+      "alt-label": "FBH",
       "materials": [
         {
           "matId": 7752,
@@ -294,7 +294,7 @@
     {
       "entryId": 9100015,
       "label": "Garm",
-      "alt-label": "",
+      "alt-label": "Garm",
       "materials": [
         {
           "matId": 948,
@@ -311,7 +311,7 @@
     {
       "entryId": 9100016,
       "label": "Ghost Ship Captain",
-      "alt-label": "",
+      "alt-label": "GSC",
       "materials": [
         {
           "matId": 1000831,
@@ -333,7 +333,7 @@
     {
       "entryId": 9100017,
       "label": "Gloom Under Night",
-      "alt-label": "",
+      "alt-label": "Gloom",
       "materials": [
         {
           "matId": 7563,
@@ -355,7 +355,7 @@
     {
       "entryId": 9100018,
       "label": "Golden Thief Bug",
-      "alt-label": "",
+      "alt-label": "GTB",
       "materials": [
         {
           "matId": 955,
@@ -377,7 +377,7 @@
     {
       "entryId": 9100019,
       "label": "Gopinich",
-      "alt-label": "",
+      "alt-label": "Gopinich",
       "materials": [
         {
           "matId": 7762,
@@ -399,7 +399,7 @@
     {
       "entryId": 9100020,
       "label": "Ifrit",
-      "alt-label": "",
+      "alt-label": "Ifrit",
       "materials": [
         {
           "matId": 7097,
@@ -421,7 +421,7 @@
     {
       "entryId": 9100021,
       "label": "Kiel-D01",
-      "alt-label": "",
+      "alt-label": "Kiel",
       "materials": [
         {
           "matId": 7507,
@@ -443,7 +443,7 @@
     {
       "entryId": 9100022,
       "label": "Ktullanux",
-      "alt-label": "",
+      "alt-label": "Ktull",
       "materials": [
         {
           "matId": 7561,
@@ -460,7 +460,7 @@
     {
       "entryId": 9100023,
       "label": "Lady Tanee",
-      "alt-label": "",
+      "alt-label": "Tanee",
       "materials": [
         {
           "matId": 7301,
@@ -477,7 +477,7 @@
     {
       "entryId": 9100024,
       "label": "Lord of Death",
-      "alt-label": "",
+      "alt-label": "LoD",
       "materials": [
         {
           "matId": 7218,
@@ -499,7 +499,7 @@
     {
       "entryId": 9100025,
       "label": "Memory of Thanatos",
-      "alt-label": "",
+      "alt-label": "Thana",
       "materials": [
         {
           "matId": 7436,
@@ -526,7 +526,7 @@
     {
       "entryId": 9100026,
       "label": "Maya",
-      "alt-label": "",
+      "alt-label": "Maya",
       "materials": [
         {
           "matId": 955,
@@ -543,7 +543,7 @@
     {
       "entryId": 9100027,
       "label": "Mistress",
-      "alt-label": "",
+      "alt-label": "Mistress",
       "materials": [
         {
           "matId": 939,
@@ -560,7 +560,7 @@
     {
       "entryId": 9100028,
       "label": "Moonlight Flower",
-      "alt-label": "",
+      "alt-label": "Moony",
       "materials": [
         {
           "matId": 1022,
@@ -582,7 +582,7 @@
     {
       "entryId": 9100029,
       "label": "Orc Hero",
-      "alt-label": "",
+      "alt-label": "O.Hero",
       "materials": [
         {
           "matId": 7002,
@@ -599,7 +599,7 @@
     {
       "entryId": 9100030,
       "label": "Orc Lord",
-      "alt-label": "",
+      "alt-label": "O.Lord",
       "materials": [
         {
           "matId": 931,
@@ -616,7 +616,7 @@
     {
       "entryId": 9100031,
       "label": "Osiris",
-      "alt-label": "",
+      "alt-label": "Osiris",
       "materials": [
         {
           "matId": 528,
@@ -638,7 +638,7 @@
     {
       "entryId": 9100032,
       "label": "Pharaoh",
-      "alt-label": "",
+      "alt-label": "Pharaoh",
       "materials": [
         {
           "matId": 7110,
@@ -660,7 +660,7 @@
     {
       "entryId": 9100033,
       "label": "Phreeoni",
-      "alt-label": "",
+      "alt-label": "Phree",
       "materials": [
         {
           "matId": 1055,
@@ -672,7 +672,7 @@
     {
       "entryId": 9100034,
       "label": "RSX-0806",
-      "alt-label": "",
+      "alt-label": "RSX",
       "materials": [
         {
           "matId": 7315,
@@ -699,7 +699,7 @@
     {
       "entryId": 9100035,
       "label": "Samurai Specter",
-      "alt-label": "",
+      "alt-label": "S.Specter",
       "materials": [
         {
           "matId": 7156,
@@ -716,7 +716,7 @@
     {
       "entryId": 9100036,
       "label": "Stormy Knight",
-      "alt-label": "",
+      "alt-label": "StormyK.",
       "materials": [
         {
           "matId": 539,
@@ -738,7 +738,7 @@
     {
       "entryId": 9100037,
       "label": "Tao Gunka",
-      "alt-label": "",
+      "alt-label": "TGK",
       "materials": [
         {
           "matId": 1048,
@@ -755,7 +755,7 @@
     {
       "entryId": 9100038,
       "label": "Turtle General",
-      "alt-label": "",
+      "alt-label": "T.Gen",
       "materials": [
         {
           "matId": 967,
@@ -777,7 +777,7 @@
     {
       "entryId": 9100039,
       "label": "Valkyrie Randgris",
-      "alt-label": "",
+      "alt-label": "VR",
       "materials": [
         {
           "matId": 7063,
@@ -794,7 +794,7 @@
     {
       "entryId": 9100040,
       "label": "Vesper",
-      "alt-label": "",
+      "alt-label": "Vesper",
       "materials": [
         {
           "matId": 999,
@@ -826,7 +826,7 @@
     {
       "entryId": 9100041,
       "label": "White Lady",
-      "alt-label": "",
+      "alt-label": "Bacsojin",
       "materials": [
         {
           "matId": 7266,
@@ -843,7 +843,7 @@
     {
       "entryId": 9100042,
       "label": "Wounded Morocc",
-      "alt-label": "",
+      "alt-label": "Wounded Morocc",
       "materials": [
         {
           "matId": 7798,
