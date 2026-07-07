@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "sourceName": "Brewing (Potion Making) Creation Table",
+  "description": "From https://ratemyserver.net/index.php?page=creation_db&op=4",
+  "display": {
+    "enableTags": true,
+    "tagText": "Brew",
+    "isSuffix": false,
+    "enableDescriptions": true,
+    "headerText": "Brewing Material",
+    "descriptionHeaderColor": "00897B",
+    "enableDetailedDescriptions": false,
+    "detailedDescriptionColor": "43A047"
+  },
+  "entries": [
+    {
+      "entryId": 501,
+      "label": "Red Potion",
+      "materials": [
+        {
+          "matId": 507,
+          "matName": "Red Herb",
+          "qty": 1
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 503,
+      "label": "Yellow Potion",
+      "materials": [
+        {
+          "matId": 508,
+          "matName": "Yellow Herb",
+          "qty": 1
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 504,
+      "label": "White Potion",
+      "materials": [
+        {
+          "matId": 509,
+          "matName": "White Herb",
+          "qty": 1
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 505,
+      "label": "Blue Potion",
+      "materials": [
+        {
+          "matId": 510,
+          "matName": "Blue Herb",
+          "qty": 1
+        },
+        {
+          "matId": 911,
+          "matName": "Scell",
+          "qty": 1
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 545,
+      "label": "Condensed Red Potion",
+      "materials": [
+        {
+          "matId": 501,
+          "matName": "Red Potion",
+          "qty": 1
+        },
+        {
+          "matId": 952,
+          "matName": "Cactus Needle",
+          "qty": 1
+        },
+        {
+          "matId": 1092,
+          "matName": "Empty Test Tube",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 546,
+      "label": "Condensed Yellow Potion",
+      "materials": [
+        {
+          "matId": 503,
+          "matName": "Yellow Potion",
+          "qty": 1
+        },
+        {
+          "matId": 1017,
+          "matName": "Mole Whiskers",
+          "qty": 1
+        },
+        {
+          "matId": 1092,
+          "matName": "Empty Test Tube",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 547,
+      "label": "Condensed White Potion",
+      "materials": [
+        {
+          "matId": 504,
+          "matName": "White Potion",
+          "qty": 1
+        },
+        {
+          "matId": 1061,
+          "matName": "Witched Starsand",
+          "qty": 1
+        },
+        {
+          "matId": 1092,
+          "matName": "Empty Test Tube",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 605,
+      "label": "Anodyne",
+      "materials": [
+        {
+          "matId": 708,
+          "matName": "Ment",
+          "qty": 1
+        },
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 970,
+          "matName": "Alcohol",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 606,
+      "label": "Aloevera",
+      "materials": [
+        {
+          "matId": 518,
+          "matName": "Honey",
+          "qty": 1
+        },
+        {
+          "matId": 704,
+          "matName": "Aloe",
+          "qty": 1
+        },
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 970,
+      "label": "Alcohol",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 905,
+          "matName": "Stem",
+          "qty": 5
+        },
+        {
+          "matId": 1092,
+          "matName": "Empty Test Tube",
+          "qty": 1
+        },
+        {
+          "matId": 7033,
+          "matName": "Poison Spore",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "entryId": 7135,
+      "label": "Bottle Grenade",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 970,
+          "matName": "Alcohol",
+          "qty": 1
+        },
+        {
+          "matId": 1059,
+          "matName": "Fabric",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 7136,
+      "label": "Acid Bottle",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 929,
+          "matName": "Immortal Heart",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 7137,
+      "label": "Plant Bottle",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 1032,
+          "matName": "Maneater Blossom",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "entryId": 7138,
+      "label": "Marine Sphere Bottle",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 1050,
+          "matName": "Tendon",
+          "qty": 1
+        },
+        {
+          "matId": 1051,
+          "matName": "Detonator",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 7139,
+      "label": "Glistening Coat",
+      "materials": [
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 950,
+          "matName": "Heart of Mermaid",
+          "qty": 1
+        },
+        {
+          "matId": 970,
+          "matName": "Alcohol",
+          "qty": 1
+        },
+        {
+          "matId": 1044,
+          "matName": "Zenorc's Fang",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 7142,
+      "label": "Embryo",
+      "materials": [
+        {
+          "matId": 7140,
+          "matName": "Seed of Life",
+          "qty": 1
+        },
+        {
+          "matId": 7141,
+          "matName": "Morning Dew of Yggdrasil",
+          "qty": 1
+        },
+        {
+          "matId": 7143,
+          "matName": "Glass Tube",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 12118,
+      "label": "Fireproof Potion",
+      "materials": [
+        {
+          "matId": 716,
+          "matName": "Red Gemstone",
+          "qty": 1
+        },
+        {
+          "matId": 1012,
+          "matName": "Frill",
+          "qty": 2
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 12119,
+      "label": "Coldproof Potion",
+      "materials": [
+        {
+          "matId": 717,
+          "matName": "Blue Gemstone",
+          "qty": 1
+        },
+        {
+          "matId": 950,
+          "matName": "Heart of Mermaid",
+          "qty": 3
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 12120,
+      "label": "Earthproof Potion",
+      "materials": [
+        {
+          "matId": 715,
+          "matName": "Yellow Gemstone",
+          "qty": 1
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 7126,
+          "matName": "Large Jellopy",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "entryId": 12121,
+      "label": "Thunderproof Potion",
+      "materials": [
+        {
+          "matId": 717,
+          "matName": "Blue Gemstone",
+          "qty": 1
+        },
+        {
+          "matId": 1057,
+          "matName": "Moth Dust",
+          "qty": 3
+        },
+        {
+          "matId": 1093,
+          "matName": "Empty Potion Bottle",
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}

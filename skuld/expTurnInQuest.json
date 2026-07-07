@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "sourceName": "Repeatable Turn-In Quests",
+  "description": "(entryId Range 9000000 - 9100000) From https://wiki.revenantelegy.com/Repeatable_EXP_Quests",
+  "display": {
+    "enableTags": true,
+    "tagText": "Exp",
+    "isSuffix": false,
+    "enableDescriptions": true,
+    "headerText": "Exp Turn-In Quest",
+    "descriptionHeaderColor": "E91E63",
+    "enableDetailedDescriptions": true,
+    "detailedDescriptionColor": "C2185B"
+  },
+  "entries": [
+    {
+      "entryId": 9000001,
+      "label": "Langry (gef_fild07 321/193)",
+      "materials": [
+        {
+          "matId": 914,
+          "matName": "Fluff",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000002,
+      "label": "Halgus (gef_fild04 191/54)",
+      "materials": [
+        {
+          "matId": 915,
+          "matName": "Chrysalis",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000003,
+      "label": "Gregor (moc_fild02 74/329)",
+      "materials": [
+        {
+          "matId": 925,
+          "matName": "Bill of Birds",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000004,
+      "label": "Laertes (prt_fild04 356/148)",
+      "materials": [
+        {
+          "matId": 924,
+          "matName": "Powder of Butterfly",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000005,
+      "label": "Nutters (mjolnir_01 293/20)",
+      "materials": [
+        {
+          "matId": 1026,
+          "matName": "Acorn",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000006,
+      "label": "Yullo (mjolnir_01 296/29)",
+      "materials": [
+        {
+          "matId": 1027,
+          "matName": "Porcupine Spike",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000007,
+      "label": "Shone (moc_fild17 208/346)",
+      "materials": [
+        {
+          "matId": 1055,
+          "matName": "Earthworm Peeling",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000008,
+      "label": "Private Jeremy (moc_fild11 57/138)",
+      "materials": [
+        {
+          "matId": 953,
+          "matName": "Stone Heart",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000009,
+      "label": "Lemly (moc_fild17 66/273)",
+      "materials": [
+        {
+          "matId": 1012,
+          "matName": "Frill",
+          "qty": 25
+        }
+      ]
+    },
+    {
+      "entryId": 9000010,
+      "label": "Li (pay_fild10 108/357)",
+      "materials": [
+        {
+          "matId": 1021,
+          "matName": "Dokebi Horn",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9000011,
+      "label": "Lella (ayo_fild01 44/241)",
+      "materials": [
+        {
+          "matId": 7198,
+          "matName": "Huge Leaf",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9000012,
+      "label": "Cuir (cmd_fild01 362/256)",
+      "materials": [
+        {
+          "matId": 7003,
+          "matName": "Anolian Skin",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "entryId": 9000013,
+      "label": "Local Villager (ein_fild01 43/249)",
+      "materials": [
+        {
+          "matId": 7119,
+          "matName": "Bacillus",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9000014,
+      "label": "Lilla (um_fild01 34/281)",
+      "materials": [
+        {
+          "matId": 7100,
+          "matName": "Sharp Leaf",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9000015,
+      "label": "Vegetable Farmer (ein_fild06 82/171)",
+      "materials": [
+        {
+          "matId": 7106,
+          "matName": "Antelope Horn",
+          "qty": 50
+        }
+      ]
+    }
+  ]
+}

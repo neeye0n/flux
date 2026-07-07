@@ -1,0 +1,1080 @@
+{
+  "schemaVersion": 1,
+  "sourceName": "Pet Evolution Requirements",
+  "description": "(entryId Range 9200001 - 9300000) From https://wiki.revenantelegy.com/Cute_Pets",
+  "display": {
+    "enableTags": true,
+    "tagText": "Pet",
+    "isSuffix": false,
+    "enableDescriptions": true,
+    "headerText": "Pet Evolution",
+    "descriptionHeaderColor": "5C6BC0",
+    "enableDetailedDescriptions": true,
+    "detailedDescriptionColor": "7986CB"
+  },
+  "entries": [
+    {
+      "entryId": 9200001,
+      "label": "Mastering",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 610,
+          "matName": "Yggdrasil Leaf",
+          "qty": 10
+        },
+        {
+          "matId": 619,
+          "matName": "Unripe Apple",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200002,
+      "label": "Angeling",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 503,
+          "matName": "Yellow Potion",
+          "qty": 20
+        },
+        {
+          "matId": 509,
+          "matName": "White Herb",
+          "qty": 50
+        },
+        {
+          "matId": 909,
+          "matName": "Jellopy",
+          "qty": 200
+        },
+        {
+          "matId": 2282,
+          "matName": "Halo",
+          "qty": 1
+        },
+        {
+          "matId": 4001,
+          "matName": "Poring Card",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200003,
+      "label": "Grand Peco",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 537,
+          "matName": "Pet Food",
+          "qty": 10
+        },
+        {
+          "matId": 632,
+          "matName": "Fatty Chubby EarthWorm",
+          "qty": 3
+        },
+        {
+          "matId": 7101,
+          "matName": "PecoPeco Feather",
+          "qty": 300
+        },
+        {
+          "matId": 4031,
+          "matName": "PecoPeco Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200004,
+      "label": "High Orc",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 635,
+          "matName": "Orc Trophy",
+          "qty": 3
+        },
+        {
+          "matId": 1124,
+          "matName": "Orcish Sword",
+          "qty": 1
+        },
+        {
+          "matId": 931,
+          "matName": "Orcish Voucher",
+          "qty": 500
+        },
+        {
+          "matId": 2299,
+          "matName": "Orc Helm",
+          "qty": 1
+        },
+        {
+          "matId": 4066,
+          "matName": "Orc Warrior Card",
+          "qty": 1
+        },
+        {
+          "matId": 4255,
+          "matName": "Orc Lady Card",
+          "qty": 1
+        },
+        {
+          "matId": 4322,
+          "matName": "High Orc Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200005,
+      "label": "Orc Hero",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4066,
+          "matName": "Orc Warrior Card",
+          "qty": 2
+        },
+        {
+          "matId": 4375,
+          "matName": "Orc Baby Card",
+          "qty": 2
+        },
+        {
+          "matId": 4322,
+          "matName": "High Orc Card",
+          "qty": 2
+        },
+        {
+          "matId": 5094,
+          "matName": "Helmet of Orc Hero",
+          "qty": 1
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200006,
+      "label": "Am Mut",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 637,
+          "matName": "Old Broom",
+          "qty": 3
+        },
+        {
+          "matId": 981,
+          "matName": "Violet Dyestuffs",
+          "qty": 3
+        },
+        {
+          "matId": 1021,
+          "matName": "Dokebi Horn",
+          "qty": 300
+        },
+        {
+          "matId": 969,
+          "matName": "Gold",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200007,
+      "label": "Little Isis",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 639,
+          "matName": "Armlet of Obedience",
+          "qty": 3
+        },
+        {
+          "matId": 10006,
+          "matName": "Queen's Hair Ornament",
+          "qty": 1
+        },
+        {
+          "matId": 954,
+          "matName": "Shining Scale",
+          "qty": 300
+        },
+        {
+          "matId": 732,
+          "matName": "3Carat Diamond",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "entryId": 9200008,
+      "label": "Choco",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 634,
+          "matName": "Tropical Banana",
+          "qty": 3
+        },
+        {
+          "matId": 753,
+          "matName": "Yoyo Doll",
+          "qty": 2
+        },
+        {
+          "matId": 7182,
+          "matName": "Cacao",
+          "qty": 300
+        },
+        {
+          "matId": 4051,
+          "matName": "Yoyo Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200009,
+      "label": "Savage",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 537,
+          "matName": "Pet Food",
+          "qty": 10
+        },
+        {
+          "matId": 627,
+          "matName": "Sweet Milk",
+          "qty": 3
+        },
+        {
+          "matId": 517,
+          "matName": "Meat",
+          "qty": 100
+        },
+        {
+          "matId": 949,
+          "matName": "Feather",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200010,
+      "label": "Yao Jun",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 2264,
+          "matName": "Munak Hat",
+          "qty": 1
+        },
+        {
+          "matId": 5046,
+          "matName": "Bongun Hat",
+          "qty": 1
+        },
+        {
+          "matId": 7277,
+          "matName": "Munak Doll",
+          "qty": 100
+        },
+        {
+          "matId": 7014,
+          "matName": "Old Portrait",
+          "qty": 50
+        },
+        {
+          "matId": 4328,
+          "matName": "Hyegun Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200011,
+      "label": "Diabolic",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 641,
+          "matName": "Contract in Shadow",
+          "qty": 3
+        },
+        {
+          "matId": 1038,
+          "matName": "Little Evil Horn",
+          "qty": 250
+        },
+        {
+          "matId": 1009,
+          "matName": "Hand of God",
+          "qty": 10
+        },
+        {
+          "matId": 4122,
+          "matName": "Deviruchi Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200012,
+      "label": "Earth Deleter",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 640,
+          "matName": "Shining Stone",
+          "qty": 3
+        },
+        {
+          "matId": 1037,
+          "matName": "Dragon Tail",
+          "qty": 100
+        },
+        {
+          "matId": 606,
+          "matName": "Aloevera",
+          "qty": 100
+        },
+        {
+          "matId": 4118,
+          "matName": "Earth Petite Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200013,
+      "label": "Wild Rose",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7198,
+          "matName": "Huge Leaf",
+          "qty": 500
+        },
+        {
+          "matId": 7206,
+          "matName": "Black Cat Doll",
+          "qty": 200
+        },
+        {
+          "matId": 1023,
+          "matName": "Fish Tail",
+          "qty": 200
+        },
+        {
+          "matId": 4195,
+          "matName": "Leaf Cat Card",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200014,
+      "label": "Eddga",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4195,
+          "matName": "Leaf Cat Card",
+          "qty": 4
+        },
+        {
+          "matId": 4257,
+          "matName": "Wild Rose Card",
+          "qty": 4
+        },
+        {
+          "matId": 4265,
+          "matName": "Jing Guai Card",
+          "qty": 4
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200015,
+      "label": "Metaller",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 707,
+          "matName": "Singing Plant",
+          "qty": 3
+        },
+        {
+          "matId": 940,
+          "matName": "Grasshopper's Leg",
+          "qty": 777
+        },
+        {
+          "matId": 508,
+          "matName": "Yellow Herb",
+          "qty": 200
+        },
+        {
+          "matId": 4057,
+          "matName": "Metaller Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200016,
+      "label": "Ancient Mummy",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 930,
+          "matName": "Rotten Bandage",
+          "qty": 1
+        },
+        {
+          "matId": 7511,
+          "matName": "Rune of Darkness",
+          "qty": 200
+        },
+        {
+          "matId": 969,
+          "matName": "Gold",
+          "qty": 3
+        },
+        {
+          "matId": 4248,
+          "matName": "Ancient Mummy Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200017,
+      "label": "Phreeoni",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4081,
+          "matName": "Hode Card",
+          "qty": 3
+        },
+        {
+          "matId": 4088,
+          "matName": "Frilldora Card",
+          "qty": 3
+        },
+        {
+          "matId": 4004,
+          "matName": "Drops Card",
+          "qty": 3
+        },
+        {
+          "matId": 7021,
+          "matName": "Foolishness Of The Blind",
+          "qty": 3
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200018,
+      "label": "Aliza",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7047,
+          "matName": "Alice's Apron",
+          "qty": 500
+        },
+        {
+          "matId": 511,
+          "matName": "Green Herb",
+          "qty": 200
+        },
+        {
+          "matId": 985,
+          "matName": "Elunium",
+          "qty": 30
+        },
+        {
+          "matId": 4253,
+          "matName": "Alice Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200019,
+      "label": "Alicel",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7317,
+          "matName": "Rusty Screw",
+          "qty": 500
+        },
+        {
+          "matId": 518,
+          "matName": "Honey",
+          "qty": 100
+        },
+        {
+          "matId": 7449,
+          "matName": "Bloody Page",
+          "qty": 50
+        },
+        {
+          "matId": 4400,
+          "matName": "Aliza Card",
+          "qty": 3
+        },
+        {
+          "matId": 4253,
+          "matName": "Alice Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200020,
+      "label": "Desert Wolf",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 628,
+          "matName": "Well-Dried Bone",
+          "qty": 3
+        },
+        {
+          "matId": 4082,
+          "matName": "Desert Wolf Card",
+          "qty": 1
+        },
+        {
+          "matId": 7030,
+          "matName": "Claw of Desert Wolf",
+          "qty": 300
+        },
+        {
+          "matId": 919,
+          "matName": "Animal Skin",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "entryId": 9200021,
+      "label": "Chaotic Baphomet Jr.",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4129,
+          "matName": "Bapho Jr. Card",
+          "qty": 1
+        },
+        {
+          "matId": 923,
+          "matName": "Evil Horn",
+          "qty": 300
+        },
+        {
+          "matId": 7054,
+          "matName": "Brigan",
+          "qty": 300
+        },
+        {
+          "matId": 508,
+          "matName": "Yellow Herb",
+          "qty": 100
+        }
+      ]
+    },
+    {
+      "entryId": 9200022,
+      "label": "Baphomet",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4129,
+          "matName": "Bapho Jr. Card",
+          "qty": 2
+        },
+        {
+          "matId": 2256,
+          "matName": "Majestic Goat",
+          "qty": 1
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200023,
+      "label": "Fire Golem",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 953,
+          "matName": "Stone Heart",
+          "qty": 500
+        },
+        {
+          "matId": 12371,
+          "matName": "Magical Lithography",
+          "qty": 1
+        },
+        {
+          "matId": 4072,
+          "matName": "Golem Card",
+          "qty": 2
+        },
+        {
+          "matId": 990,
+          "matName": "Red Blood",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "entryId": 9200024,
+      "label": "Blue Moon Loli Ruri",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7214,
+          "matName": "Bat Cage",
+          "qty": 500
+        },
+        {
+          "matId": 510,
+          "matName": "Blue Herb",
+          "qty": 50
+        },
+        {
+          "matId": 7019,
+          "matName": "Loki's Whispers",
+          "qty": 2
+        },
+        {
+          "matId": 4191,
+          "matName": "Loli Ruri Card",
+          "qty": 2
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200025,
+      "label": "Abysmal Knight",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 1064,
+          "matName": "Reins",
+          "qty": 1000
+        },
+        {
+          "matId": 7511,
+          "matName": "Rune of Darkness",
+          "qty": 1000
+        },
+        {
+          "matId": 4140,
+          "matName": "Abysmal Knight Card",
+          "qty": 2
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200026,
+      "label": "White Knight",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7063,
+          "matName": "Soft Feather",
+          "qty": 1000
+        },
+        {
+          "matId": 7510,
+          "matName": "Valhala's Flower",
+          "qty": 10
+        },
+        {
+          "matId": 4140,
+          "matName": "Abysmal Knight Card",
+          "qty": 2
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200027,
+      "label": "Hodremlin",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 23188,
+          "matName": "Broken Part",
+          "qty": 1
+        },
+        {
+          "matId": 6100,
+          "matName": "Damp Darkness",
+          "qty": 50
+        },
+        {
+          "matId": 7340,
+          "matName": "Will of the Darkness",
+          "qty": 200
+        },
+        {
+          "matId": 4413,
+          "matName": "Hodremlin Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200028,
+      "label": "Gloom Under Night",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4413,
+          "matName": "Hodremlin Card",
+          "qty": 3
+        },
+        {
+          "matId": 4414,
+          "matName": "Seeker Card",
+          "qty": 3
+        },
+        {
+          "matId": 4410,
+          "matName": "Echio Card",
+          "qty": 3
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200029,
+      "label": "Dark Illusion",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7005,
+          "matName": "Skull",
+          "qty": 500
+        },
+        {
+          "matId": 2626,
+          "matName": "Rosary [1]",
+          "qty": 1
+        },
+        {
+          "matId": 1009,
+          "matName": "Hand of God",
+          "qty": 20
+        },
+        {
+          "matId": 4171,
+          "matName": "Dark Priest Card",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200030,
+      "label": "Dark Lord",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4171,
+          "matName": "Dark Priest Card",
+          "qty": 3
+        },
+        {
+          "matId": 4141,
+          "matName": "Evil Druid Card",
+          "qty": 3
+        },
+        {
+          "matId": 27384,
+          "matName": "Mutated White Knight Card",
+          "qty": 3
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200031,
+      "label": "Giant Hornet",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 518,
+          "matName": "Honey",
+          "qty": 80
+        },
+        {
+          "matId": 526,
+          "matName": "Royal Jelly",
+          "qty": 50
+        },
+        {
+          "matId": 7121,
+          "matName": "Honey Pot",
+          "qty": 200
+        },
+        {
+          "matId": 7163,
+          "matName": "Hard Feeler",
+          "qty": 300
+        },
+        {
+          "matId": 4019,
+          "matName": "Hornet Card",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "entryId": 9200032,
+      "label": "Mistress",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4019,
+          "matName": "Hornet card",
+          "qty": 3
+        },
+        {
+          "matId": 4079,
+          "matName": "Mantis Card",
+          "qty": 3
+        },
+        {
+          "matId": 4117,
+          "matName": "Sidewinder card",
+          "qty": 3
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200033,
+      "label": "Abandoned Teddy Bear",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 23189,
+          "matName": "Small Doll Needle",
+          "qty": 1
+        },
+        {
+          "matId": 7442,
+          "matName": "Cursed Seal",
+          "qty": 150
+        },
+        {
+          "matId": 724,
+          "matName": "Cursed Ruby",
+          "qty": 50
+        },
+        {
+          "matId": 4340,
+          "matName": "Teddy Bear Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200034,
+      "label": "Aliot",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 7317,
+          "matName": "Rusty Screw",
+          "qty": 500
+        },
+        {
+          "matId": 518,
+          "matName": "Honey",
+          "qty": 100
+        },
+        {
+          "matId": 727,
+          "matName": "Opal",
+          "qty": 10
+        },
+        {
+          "matId": 4340,
+          "matName": "Teddy Bear Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200035,
+      "label": "Kiel D-01",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4401,
+          "matName": "Alicel Card",
+          "qty": 2
+        },
+        {
+          "matId": 4402,
+          "matName": "Aliot Card",
+          "qty": 2
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200036,
+      "label": "Cat O Nine Tail",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 23187,
+          "matName": "Sap Jelly",
+          "qty": 3
+        },
+        {
+          "matId": 1022,
+          "matName": "Nine Tails",
+          "qty": 999
+        },
+        {
+          "matId": 10008,
+          "matName": "Punisher",
+          "qty": 1
+        },
+        {
+          "matId": 4159,
+          "matName": "Nine Tail Card",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200037,
+      "label": "Moonlight Flower",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 4159,
+          "matName": "Nine Tail Card",
+          "qty": 3
+        },
+        {
+          "matId": 4100,
+          "matName": "Sohee Card",
+          "qty": 3
+        },
+        {
+          "matId": 4090,
+          "matName": "Munak Card",
+          "qty": 3
+        },
+        {
+          "matId": 7642,
+          "matName": "Bloody Coin",
+          "qty": 50
+        }
+      ]
+    },
+    {
+      "entryId": 9200038,
+      "label": "Bebra",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 579,
+          "matName": "Fresh Fish",
+          "qty": 100
+        },
+        {
+          "matId": 610,
+          "matName": "Yggdrasil Leaf",
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "entryId": 9200039,
+      "label": "Skelion",
+      "alt-label": "",
+      "materials": [
+        {
+          "matId": 932,
+          "matName": "Skel-Bone",
+          "qty": 100
+        },
+        {
+          "matId": 983,
+          "matName": "Black Dyestuffs",
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}
