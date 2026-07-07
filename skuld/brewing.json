@@ -417,6 +417,47 @@
           "qty": 1
         }
       ]
+    },
+    {
+      "entryId": 678,
+      "label": "Poison Bottle",
+      "materials": [
+        {
+          "matId": 657,
+          "matName": "Berserk Potion",
+          "qty": 1
+        },
+        {
+          "matId": 713,
+          "matName": "Empty Bottle",
+          "qty": 1
+        },
+        {
+          "matId": 937,
+          "matName": "Venom Canine",
+          "qty": 1
+        },
+        {
+          "matId": 939,
+          "matName": "Bee Sting",
+          "qty": 1
+        },
+        {
+          "matId": 952,
+          "matName": "Cactus Needle",
+          "qty": 1
+        },
+        {
+          "matId": 972,
+          "matName": "Karvodailnirol",
+          "qty": 1
+        },
+        {
+          "matId": 7033,
+          "matName": "Poison Spore",
+          "qty": 1
+        }
+      ]
     }
   ]
 }
