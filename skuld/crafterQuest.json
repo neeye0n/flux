@@ -335,6 +335,208 @@
         { "matId": 7110, "matName": "Broken Sword", "qty": 500 },
         { "matId": 1056, "matName": "Grit", "qty": 500 }
       ]
+    },
+    {
+      "entryId": 20962,
+      "label": "Skin of Typhoon",
+      "materials": [
+        { "matId": 2504, "matName": "Muffler", "qty": 1 },
+        { "matId": 4952, "matName": "Fire Drop", "qty": 50 },
+        { "matId": 720, "matName": "Aquamarine", "qty": 50 },
+        { "matId": 7123, "matName": "Dragon Skin", "qty": 50 },
+        { "matId": 967, "matName": "Turtle Shell", "qty": 50 }
+      ]
+    },
+    {
+      "entryId": 2468,
+      "label": "Boots of Typhoon",
+      "materials": [
+        { "matId": 2406, "matName": "Boots", "qty": 1 },
+        { "matId": 4952, "matName": "Fire Drop", "qty": 50 },
+        { "matId": 720, "matName": "Aquamarine", "qty": 50 },
+        { "matId": 7123, "matName": "Dragon Skin", "qty": 50 },
+        { "matId": 967, "matName": "Turtle Shell", "qty": 50 }
+      ]
+    },
+    {
+      "entryId": 530054,
+      "label": "Icicle Spear",
+      "materials": [
+        { "matId": 1417, "matName": "Pole Axe", "qty": 1 },
+        { "matId": 1484, "matName": "Cardo", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 90320,
+      "label": "Permafrost Fist",
+      "materials": [
+        { "matId": 1822, "matName": "Combo Battle Gloves", "qty": 1 },
+        { "matId": 1814, "matName": "Berserk", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 560061,
+      "label": "Glacial Claw",
+      "materials": [
+        { "matId": 1815, "matName": "Hatii Claw", "qty": 1 },
+        { "matId": 1814, "matName": "Berserk", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 700094,
+      "label": "Frostbite Bow",
+      "materials": [
+        { "matId": 1720, "matName": "Rudra Bow", "qty": 1 },
+        { "matId": 1724, "matName": "Dragon Wing", "qty": 1 },
+        { "matId": 1723, "matName": "Luna Bow", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 510061,
+      "label": "Dagger of Frozen Elements",
+      "materials": [
+        { "matId": 1131, "matName": "Ice Falchion", "qty": 1 },
+        { "matId": 13011, "matName": "Asura", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 640050,
+      "label": "Glacial Rod",
+      "materials": [
+        { "matId": 1618, "matName": "Staff of Survival", "qty": 1 },
+        { "matId": 1626, "matName": "Piercing Staff", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 460074,
+      "label": "Icicle Shield",
+      "materials": [
+        { "matId": 2111, "matName": "Herald of God", "qty": 1 },
+        { "matId": 2108, "matName": "Mirror Shield", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 590039,
+      "label": "Permafrost Mace",
+      "materials": [
+        { "matId": 1618, "matName": "Staff of Survival", "qty": 1 },
+        { "matId": 1625, "matName": "Healing Staff", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 600027,
+      "label": "Frozen Sword",
+      "materials": [
+        { "matId": 1175, "matName": "Atroce Weapon", "qty": 1 },
+        { "matId": 1164, "matName": "Muramasa", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 550134,
+      "label": "Frozen Foxtail Staff",
+      "materials": [
+        { "matId": 1620, "matName": "Staff of Survival", "qty": 1 },
+        { "matId": 1473, "matName": "Wizardry Staff", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 520031,
+      "label": "Axe of Frozen Blood",
+      "materials": [
+        { "matId": 1363, "matName": "Bloody Axe", "qty": 1 },
+        { "matId": 1306, "matName": "War Axe", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 510139,
+      "label": "Frostcall Dagger",
+      "materials": [
+        { "matId": 1231, "matName": "Bazerald", "qty": 1 },
+        { "matId": 1236, "matName": "Sucsamad", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 480002,
+      "label": "Garment of Frozen Rage",
+      "materials": [
+        { "matId": 2524, "matName": "Valkyrie Manteau", "qty": 1 },
+        { "matId": 2504, "matName": "Muffler", "qty": 3 },
+        { "matId": 2506, "matName": "Manteau", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
+      ]
+    },
+    {
+      "entryId": 401019,
+      "label": "Snowfall Helm",
+      "materials": [
+        { "matId": 5160, "matName": "Majestic Goat", "qty": 1 },
+        { "matId": 5122, "matName": "Magni's Cap", "qty": 3 },
+        { "matId": 90297, "matName": "Deep-Earth Stalactice Card", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 1 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 500 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 250 }
+      ]
+    },
+    {
+      "entryId": 400437,
+      "label": "Frozen Aurora Borealis",
+      "materials": [
+        { "matId": 5164, "matName": "Tiara", "qty": 1 },
+        { "matId": 2252, "matName": "Wizard Hat [0]", "qty": 3 },
+        { "matId": 90298, "matName": "Icering Card", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 1 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 500 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 250 }
+      ]
+    },
+    {
+      "entryId": 28551,
+      "label": "Frozen Spirit Glove",
+      "materials": [
+        { "matId": 2624, "matName": "Glove", "qty": 1 },
+        { "matId": 2621, "matName": "Ring", "qty": 1 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 1 },
+        { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 250 },
+        { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 150 }
+      ]
     }
   ]
 }
