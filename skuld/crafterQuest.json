@@ -396,8 +396,7 @@
       "label": "Frostbite Bow",
       "materials": [
         { "matId": 1720, "matName": "Rudra Bow", "qty": 1 },
-        { "matId": 1724, "matName": "Dragon Wing", "qty": 1 },
-        { "matId": 1723, "matName": "Luna Bow", "qty": 1 },
+        { "matId": 1723, "matName": "Luna Bow", "qty": 3 },
         { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
         { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
         { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
@@ -474,7 +473,7 @@
       "label": "Axe of Frozen Blood",
       "materials": [
         { "matId": 1363, "matName": "Bloody Axe", "qty": 1 },
-        { "matId": 1306, "matName": "War Axe", "qty": 3 },
+        { "matId": 1306, "matName": "War Axe", "qty": 1 },
         { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
         { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
         { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
@@ -498,7 +497,7 @@
         { "matId": 2524, "matName": "Valkyrie Manteau", "qty": 1 },
         { "matId": 2504, "matName": "Muffler", "qty": 3 },
         { "matId": 2506, "matName": "Manteau", "qty": 3 },
-        { "matId": 1002431, "matName": "Permafrost", "qty": 3 },
+        { "matId": 1002431, "matName": "Permafrost", "qty": 1 },
         { "matId": 1001127, "matName": "Magnificent Diamond", "qty": 750 },
         { "matId": 1001108, "matName": "Raw Diamond Ore", "qty": 500 }
       ]
