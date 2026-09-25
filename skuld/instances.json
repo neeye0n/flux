@@ -856,6 +856,23 @@
           "qty": 25
         }
       ]
+    },
+    {
+      "entryId": 9100043,
+      "label": "Jotunn",
+      "alt-label": "Jotunn",
+      "materials": [
+        {
+          "matId": 1001127,
+          "matName": "Magnificent Diamond",
+          "qty": 5
+        },
+        {
+          "matId": 1001108,
+          "matName": "Raw Diamond Ore",
+          "qty": 5
+        }
+      ]
     }
   ]
 }
